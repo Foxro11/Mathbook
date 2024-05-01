@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de ecuaciones</title>
+   
+
+     <!-- LINKS -->
+     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+     <!-- FUENTES -->
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styleprimersemestre.css">
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+     <!-- CNDJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+      <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #c7d7fa;
+      /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,#fbd320, #c7f883,#73fc33);
+      /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fbd320, #c7f883,#73fc33);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center> <h1>Sistemas de ecuaciones</h1></center>
+    </header>
+    <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>Un sistema de ecuaciones es un conjunto de dos o más ecuaciones que se deben resolver de manera simultánea. Las soluciones del sistema son los valores de las variables que hacen que todas las ecuaciones del sistema sean verdaderas al mismo tiempo.</p>
+    </section>
+    <section id="explicacion">
+        <h2>Explicación Detallada</h2>
+
+        <h3>Tipos de sistemas de ecuaciones:</h3>
+        <ul>
+            <li><strong>Sistemas de dos ecuaciones con dos incógnitas:</strong> Son los sistemas más comunes y se pueden resolver mediante diferentes métodos, como el método de sustitución, el método de eliminación y el método de igualación.</li>
+            <li><strong>Sistemas de tres o más ecuaciones con tres o más incógnitas:</strong> Se pueden resolver mediante métodos matriciales o mediante métodos de eliminación.</li>
+        </ul>
+
+        <h3>Métodos para resolver sistemas de ecuaciones:</h3>
+        <ul>
+            <li><strong>Método de sustitución: </strong> Se despeja una variable en una de las ecuaciones y se sustituye en la otra ecuación.</li>
+            <li><strong>Método de eliminación:</strong> Se suman o restan las ecuaciones del sistema para eliminar una de las variables.</li>
+            <li><strong>Método de igualación:</strong> Se igualan dos de las ecuaciones del sistema que tienen la misma variable.</li>
+            <li><strong>Métodos matriciales:</strong> Se utilizan matrices para representar el sistema de ecuaciones y resolverlo de forma más eficiente.</li>
+        </ul>
+    </section>
+    <section id="videos">
+        <h2>Videos Explicativos</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Sistemas de ecuaciones lineales 2x2 INTRODUCCIÓN</h5>
+                    <p class="card-text">Introducción a la solución de sistemas de ecuaciones de 2x2 en el que se aclaran los conceptos de: ecuación, solución de una ecuación, sistemas de ecuaciones y solución de un sistema de ecuaciones, dentro del curso de Sistemas de ecuaciones 2x2.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/oQQfG1zIPMc?si=tPLDYleFnmJGpi4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Sistemas de ecuaciones | Solución Método Gráfico | Ejemplo 1</h5>
+                    <p class="card-text">Ejemplo de solución de sistemas de ecuaciones lineales de 2x2 por el método gráfico, encontrando puntos de las rectas usando una tabla de valores. Dentro del curso de Sistemas de ecuaciones 2x2.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/lJ2yfxzmAkc?si=h2yhXttYEjZe3pAH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Sistemas de ecuaciones | Solución Método Gráfico | Ejemplo 2</h5>
+                    <p class="card-text">Segundo ejemplo de solución de sistemas de ecuaciones lineales de 2x2 por el método gráfico, encontrando puntos de las rectas usando una tabla de valores. Dentro del curso de Sistemas de ecuaciones 2x2.<p>
+                        <iframe width="245" height="147" src="https://www.youtube.com/embed/dJ18ERwjNb4?si=_dnmY8gsv8uBq-Zr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Sistemas de ecuaciones de 3x3 | Introducción</h5>
+                    <p class="card-text">Inicio del curso de sistemas de ecuaciones de 3x3. Aquí te explico qué es un sistema de ecuaciones, qué es la solución del sistema y los métodos más usados para resolver sistemas de 3x3.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/5bZ1j6wom-0?si=xjP8r2oOM9wxFyQU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Solución de un sistema de 3x3 | Método de Reducción - Eliminación 1</h5>
+                    <p class="card-text">Solución de un sistema de ecuaciones de 3x3 usando el método de Reducción o Eliminación, ejemplo 1.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/bNZ_7qzgPrI?si=3eLtmAs-CEyXbed7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Solución de un sistema de 3x3 | Determinantes- Cramer 1</h5>
+                    <p class="card-text">Solución de un sistema de ecuaciones de 3x3 usando el método de Determinantes también llamado el método de Cramer, ejemplo 1.</p>
+                        <iframe width="245" height="147" src="https://www.youtube.com/embed/8Vx3KQj7bd0?si=86eI6lbjkiZRBJL-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ejercicios">
+        <h2>Ejercicios</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                        <li>Ejercicio 1: Resolver el siguiente sistema de ecuaciones:</li>
+                        <ul>x + y = 5</ul>
+                        <ul>x - y = 1</ul>
+                        <p>Solución:</p>
+                        <ul>x = \( \frac{{5 + 1}}{2} = 3 \)</ul>
+                        <ul>y = \( \frac{{5 - 1}}{2} = 2 \)</ul>
+                        
+                        <li>Ejercicio 2: Resolver el siguiente sistema de ecuaciones:</li>
+                        <ul>2x + 3y = 7</ul>
+                        <ul>x - y = 1</ul>
+                        <p>Solución:</p>
+                        <ul>x = \( \frac{{7 - 3}}{2} = 2 \)</ul>
+                        <ul>y = \( \frac{{7 - 2}}{3} = 1 \)</ul>
+                    </ol>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                        <li>Ejercicio 1: La suma de dos números es 15 y su diferencia es 3. ¿Cuáles son los números?</li>
+                        <li>Ejercicio 2: Un tren sale de una estación a las 10:00 am y viaja a una velocidad de 80 km/h. Otro tren sale de la misma estación a las 11:00 am y viaja a una velocidad de 100 km/h. ¿A qué hora alcanzará el segundo tren al primero?</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2>A destacar</h2>
+        <h3>Método de Sustitución:</h3>
+        <ul>
+            <li>Despejar una variable en una de las ecuaciones.</li>
+            <li>Sustituir la variable despejada en la otra ecuación.</li>
+            <li>Resolver la ecuación resultante para obtener el valor de la otra variable.</li>
+            <li>Sustituir el valor obtenido en una de las ecuaciones originales para obtener el valor de la primera variable.</li>
+        </ul>
+        <h3>Método de Eliminación:</h3>
+        <ul>
+            <li>Sumar o restar las ecuaciones del sistema para eliminar una de las variables.</li>
+            <li>Resolver la ecuación resultante para obtener el valor de la variable restante.</li>
+            <li>Sustituir el valor obtenido en una de las ecuaciones originales para obtener el valor de la primera variable.</li>
+        </ul>
+        <h3>Método de Igualación:</h3>
+        <ul>
+            <li>Igualar dos de las ecuaciones del sistema que tienen la misma variable.</li>
+            <li>Resolver la ecuación resultante para obtener el valor de la variable.</li>
+            <li>Sustituir el valor obtenido en una de las ecuaciones originales para obtener el valor de la otra variable.</li>
+        </ul>
+        <h3>Métodos Matriciales:</h3>
+        <ul>
+            <li>Representar el sistema de ecuaciones como una matriz.</li>
+            <li>Utilizar operaciones con matrices para resolver el sistema.</li>
+        </ul>
+    </section>
+</body>
+</html>

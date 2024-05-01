@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje y Expresiones Algebraicas</title>
+   
+
+     <!-- LINKS -->
+     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+     <!-- FUENTES -->
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styleprimersemestre.css">
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+     <!-- CNDJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+      <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #8cabff;
+    /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,   #00ff88, #9cccad,#a2a2a2);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,   #00ff88, #9cccad,#a2a2a2);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center> <h1>Derivadas</h1></center>
+    </header>
+    <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>Las derivadas son uno de los conceptos más importantes del cálculo diferencial. La derivada de una función en un punto representa la tasa de cambio de la función en ese punto. En este curso de cuarto semestre, nos enfocaremos en la definición formal de derivada, diferentes técnicas para calcular derivadas y aplicaciones de las derivadas.</p>
+    </section>
+    <section id="explicacion">
+        <h2>Explicación Detallada</h2>
+        <h3>Definición formal de derivada:</h3>
+        <p>La derivada de la función \(f(x)\) en el punto \(a\), denotada como \(f'(a)\), es el límite de la diferencia incremental \((f(x) - f(a)) / (x - a)\) cuando \(x\) se aproxima a \(a\).</p>
+        <h3>Técnicas para calcular derivadas:</h3>
+        <ul>
+            <li>Reglas básicas de derivación:</li>
+            <ul>
+                <li>La derivada de una constante es 0.</li>
+                <li>La derivada de \(x^n es nx^(n-1)\).</li>
+                <li>La derivada de la suma de dos funciones es la suma de las derivadas de las funciones.</li>
+                <li>La derivada del producto de dos funciones es la primera función por la derivada de la segunda más la segunda función por la derivada de la primera.</li>
+                <li>La derivada del cociente de dos funciones es (la derivada del numerador por el denominador menos el numerador por la derivada del denominador) todo dividido por el cuadrado del denominador.</li>
+            </ul>
+            <li><strong>Regla de la cadena:  </strong> Si \(f(x) = g(u(x))\), entonces \(f'(x) = g'(u(x)) * u'(x)\).</li>
+            <li><strong>Regla de L'Hôpital: </strong> Se utiliza cuando la derivada es de la forma \(0/0 o ∞/∞\).</li>
+        </ul>
+        <h3>Aplicaciones de las derivadas:</h3>
+        <ul>
+            <li>Encontrar la pendiente de la línea tangente a la gráfica de una función en un punto.</li>
+            <li>Determinar si una función es monótona (creciente o decreciente).</li>
+            <li>Encontrar puntos máximos y mínimos de una función.</li>
+            <li>Resolver problemas de optimización.</li>
+        </ul>
+    </section>
+    <section id="videos">
+        <h2>Videos Explicativos</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Qué es la derivada? | Concepto de derivada</h5>
+                    <p class="card-text">Explicación de que es la derivada o el concepto de derivada explicándolo como la velocidad en un punto, teniendo en cuenta los incrementos, empezando con el concepto de velocidad media hasta llegar al concepto de derivada de una función, dentro del curso de Derivadas.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/uK4-s0ojHFg?si=UlT-szLiNJ-tLwvJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Derivadas usando la definición | Introducción</h5>
+                    <p class="card-text">Breve introducción a las derivadas usando la definición que incluye el límite, aclarando el valor de f(x) y f(x+h), dentro del curso de Derivadas.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/pMYdSjgzrys?si=MlXidsBIixev3oQF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">REGLAS DE DERIVACIÓN - Repaso en 7 minutos con ejemplos</h5>
+                    <p class="card-text">Breve explicacion de las reglas de derivacíon en 7 minutos</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/aVNa-J8iB5I?si=gDm_dR4Bv1XlZtmZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+        </div>
+        <br><br>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Derivada de una constante | Reglas de derivación</h5>
+                    <p class="card-text">Explicación de cómo encontrar la derivada de una constante, explicando qué expresiones se toman como constante cuando vamos a encontrar la derivada, dentro del curso de derivadas.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/T42-57sojsA?si=vUYKzgTe_vMtjRGr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Derivada aplicando regla de la cadena y regla del cociente | La Prof Lina M3</h5>
+                    <p class="card-text">Hola, hoy resolveremos este ejercicio de derivadas f(x)=(x+5)/(5x+10)^1/5 aplicando la regla del cociente, la regla de la potencia y algunas propiedades de la potenciación.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/5ZjuC7qxR3w?si=EmIEKQT4-CtYdmpt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Aprende a derivar con este video | 50 DERIVADAS desde cero | Reglas de derivación</h5>
+                    <p class="card-text">El video proporciona una guía completa sobre cómo derivar funciones algebraicas, explicando más de 50 ejercicios y destacando reglas clave para derivar constantes, productos, potencias, divisiones y raíces. Se muestran ejemplos detallados de aplicación de cada regla, junto con técnicas de simplificación para abordar funciones más complejas. El contenido aborda desde casos simples hasta situaciones más avanzadas, proporcionando una comprensión exhaustiva de cómo aplicar las reglas de derivación en una variedad de contextos matemáticos.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/oxZdtDxF8sA?si=-fX4zScAEeyTqryI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+           
+            
+            </div>
+        </div>
+    </section>
+    <section id="ejercicios">
+        <h2>Ejercicios</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                       <li>Calcula la derivada de la función \(f(x) = x² - 4x + 3\).</li>
+                       <ul>Solución: \(f'(x) = 2x - 4\).</ul>
+                       <li>Encuentra la pendiente de la línea tangente a la gráfica de la función \(f(x) = sin(x)\) en el punto \(x = π/2\).</li>
+                       <ul>Solución: La pendiente de la línea tangente es \(f'(π/2) = cos(π/2) = 0\).</ul>
+                       <li>Determina si la función \(f(x) = x³ - 3x² + 2x - 1\) es creciente o decreciente.</li>
+                       <ul>Solución: La función es creciente si \(f'(x) > 0\) y decreciente si \(f'(x) < 0\). Analizando \(f'(x) = 3x² - 6x + 2\), se observa que la función es creciente en los intervalos \((0, 1)\) U \((2, ∞)\) y decreciente en el intervalo \((1, 2)\).</ul>
+                    </ol>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                        <li>Calcula la derivada de la función \/f(x) = e^x /((x² + 1)\).</li>
+                        <li>Encuentra los puntos máximos y mínimos de la función \(f(x) = x³ - 2x² + x - 1\).</li>
+                        <li>Utiliza la derivada para encontrar el valor máximo de la función \(f(x) = -x² + 4x - 3\).</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2>Formulario de Fórmulas</h2>
+        <ol>
+            <li>Definición formal de derivada::</li>
+            <ul>\(f'(a) = lim_(x->a) (f(x) - f(a)) / (x - a)\)</ul>
+            <li>Reglas básicas de derivación:</li>
+            <ul>\((f(x) + g(x))' = f'(x) + g'(x)\)</ul>
+            <ul>\((f(x) - g(x))' = f'(x) - g'(x)\)</ul>
+            <ul>\((kf(x))' = k*f'(x\))</ul>
+            <ul>\((x^n)' = nx^(n-1))</ul>
+            <ul>\((e^x)' = e^x\)</ul>
+            <ul>\((log(x))' = 1/x\)</ul>
+            <ul>\((sin(x))' = cos(x)\)</ul>
+            <ul>\((cos(x))' = -sin(x)\)</ul>
+            <li>Regla de la cadena:</li>
+            <ul>\(f'(x) = g'(u(x)) * u'(x)\)</ul>
+            <li>Regla de L'Hôpital:</li>
+        <ul>\(lim_(x->a) f(x) / g(x) = lim_(x->a) f'(x) / g'(x)\)</ul>
+        </ol>
+    </section>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACTORIZACIÓN</title>
+
+     <!-- LINKS -->
+     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+     <!-- FUENTES -->
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styleprimersemestre.css">
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+     <!-- CNDJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+      <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #c7d7fa;
+      /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,#fbd320, #c7f883,#73fc33);
+      /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fbd320, #c7f883,#73fc33);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center><h1>Factorización</h1></center>
+    </header>
+    <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>La factorización es el proceso de escribir una expresión matemática como un producto de factores. Es una herramienta fundamental en álgebra y otras áreas de las matemáticas.</p>
+    </section>
+    <section id="explicacion">
+        <h2>Explicación Detallada</h2>
+
+        <h3>Tipos de factorización:</h3>
+        <ul>
+            <li><strong>Factorización por factor común:</strong>Se busca un factor que sea común a todos los términos de la expresión.</li>
+            <li><strong>Factorización por trinomio cuadrado perfecto:</strong>Se utiliza cuando la expresión tiene la forma \(a^2 + 2ab + b^2\).</li>
+            <li><strong>Factorización por diferencia de cuadrados:</strong>Se utiliza cuando la expresión tiene la forma \(a^2 - b^2\).</li>
+            <li><strong>Factorización por suma o diferencia de cubos:</strong>Se utiliza cuando la expresión tiene la forma \(a^3 + b^3\) o \(a^3 - b^3\).</li>
+        </ul>
+    </section>
+    <section id="videos">
+        <h2>Videos Explicativos</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Qué es factorizar</h5>
+                    <p class="card-text">Explicación del concepto de factorización, explicación con ejemplos de qué es factorizar y cómo se factoriza un monomio y un polinomio, dentro del curso de Factorización.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/sSfO1CsKJ4g?si=iZdH7W9tux5sQI38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Para qué sirve la factorización</h5>
+                    <p class="card-text">Explicación de la factorización y para qué sirve, primero explicando en matemáticas y luego en ejemplos de la vida real.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/LNw51bNAJIw?si=rP55mQ_U677-X5yw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Factor comun conceptos previos</h5>
+                    <p class="card-text">Clase en la que vemos lo que debemos saber para poder factorizar por el método de factor común.<p>
+                        <iframe width="245" height="147" src="https://www.youtube.com/embed/Bjjp0s5mBLg?si=7Ql2UJjkeVhV5Dj-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Diferencia de cuadrados Introducción</h5>
+                    <p class="card-text">Introducción a la diferencia de cuadrados, en este caso repasando la raíz cuadrada de un número y de una expresión algebraica, además te explico por qué la diferencia de cuadrados se factoriza así.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/kFeyY6En37I?si=v1YFJmsVnReHA7Z8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Trinomio x2+bx+c Introducción</h5>
+                    <p class="card-text">Hablaremos de algunos temas importantes para poder factorizar usando este método, además cómo saber si un trinomio se puede factorizar y qué tener en cuenta para factorizar usando el trinomio de la forma x2+bx+c</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/T6bCWDm0M1g?si=h-NZpNKT_W6MAMfB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Trinomio cuadrado perfecto conceptos previos</h5>
+                    <p class="card-text">Explicación de los conceptos que debemos conocer para poder factorizar por el método de trinomio cuadrado perfecto.<p>
+                        <iframe width="245" height="147" src="https://www.youtube.com/embed/uDEfceTDHQg?si=tsv_0NzDQ2By5uZ1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ejercicios">
+        <h2>Ejercicios</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                        <li>Ejercicio 1: Factoriza la expresión \(3x^2 + 6x\).</li>
+                        <ul>Solución: \(3x^2 + 6x = 3x(x + 2)\)</ul>
+                        
+                        <li>Ejercicio 2: Factoriza la expresión \(x^2 - 4\).</li>
+                        <ul>Solución: \(x^2 - 4 = (x + 2)(x - 2)\)</ul>
+                    </ol>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                        <li>Ejercicio 1: Factoriza la expresión \(a^2 + 4ab + 4b^2\).</li>
+                        <li>Ejercicio 2: Factoriza la expresión \(x^3 - 8\).</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2>A destacar</h2>
+        <ul>
+            <li>Factor común: \(a \times b = c \times (a \times b)\)</li>
+            <li>Trinomio cuadrado perfecto: \(a^2 + 2ab + b^2 = (a + b)^2\)</li>
+            <li>Diferencia de cuadrados: \(a^2 - b^2 = (a + b)(a - b)\)</li>
+            <li>Suma de cubos: \(a^3 + b^3 = (a + b)(a^2 - ab + b^2)\)</li>
+            <li>Diferencia de cubos: \(a^3 - b^3 = (a - b)(a^2 + ab + b^2)\)</li>
+        </ul>
+    </section>
+</body>
+</html>

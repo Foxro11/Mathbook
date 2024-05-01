@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje y Expresiones Algebraicas</title>
+   
+
+     <!-- LINKS -->
+     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+     <!-- FUENTES -->
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styleprimersemestre.css">
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+     <!-- CNDJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+      <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #d2f8ff;
+    /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,  #4781ff, #8f2eff,#45daff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,   #00ffff, #cb8cff,#157aee);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center> <strong><h1>Identidades Trigonométricas</h1></strong></center>
+    </header>
+    <section id="introduccion">
+        <h2><strong>Introducción</strong></h2>
+        <p>Las identidades trigonométricas son ecuaciones que involucran funciones trigonométricas (seno, coseno, tangente, cotangente, secante y cosecante) y son válidas para cualquier valor permitido de las variables o ángulos que se consideren. Estas igualdades son fundamentales en trigonometría para simplificar expresiones, resolver ecuaciones trigonométricas y demostrar otras propiedades trigonométricas.</p>
+    </section>
+    <section id="explicacion">
+        <h3><strong>Propiedades de las Identidades Trigonométricas:</strong></h3>
+        <ul>
+            <li>Validez: Las identidades trigonométricas son válidas para cualquier valor permitido de las variables o ángulos que se consideren. Esto significa que la igualdad se cumple siempre que los valores de las funciones trigonométricas estén definidas.</li>
+            <li>Periodicidad: Las funciones trigonométricas son periódicas, lo que significa que se repiten a intervalos regulares. Esta propiedad se refleja en las identidades trigonométricas, que también son periódicas.</li>
+            <li>Homogeneidad: Las identidades trigonométricas son homogéneas de grado 0. Esto significa que si se multiplican todos los términos de la identidad por un mismo número real, la igualdad se mantiene.</li>
+            <li>Aditividad: Las identidades trigonométricas son aditivas. Esto significa que si se suman dos identidades trigonométricas, la igualdad resultante también es una identidad trigonométrica.</li>
+            <li>Multiplicidad: Las identidades trigonométricas son multiplicativas. Esto significa que si se multiplican dos identidades trigonométricas, la igualdad resultante también es una identidad trigonométrica.</li>
+            <li>Inversas: Las identidades trigonométricas pueden tener inversas. Es decir, a partir de una identidad trigonométrica, se puede obtener otra identidad válida.</li>
+            <li>Demostración: Las identidades trigonométricas pueden ser demostradas a partir de definiciones básicas, propiedades y otras identidades. Existen diferentes métodos para realizar demostraciones, como la trigonometría del triángulo rectángulo, la fórmula de Euler y las proyecciones vectoriales.</li> 
+            <li>Aplicaciones: Las identidades trigonométricas tienen una amplia variedad de aplicaciones en matemáticas, física, ingeniería y otras áreas. </li><br>
+        </ul>
+        <h3><strong>Utilidad de las Identidades Trigonométricas:</strong></h3>
+        <ul>
+            <li>Matemáticas: Simplificar expresiones, demostrar teoremas, resolver ecuaciones trigonométricas.</li>
+            <li>Física: Cálculo de movimiento ondulatorio, fuerzas en sistemas oscilantes, estudio de la luz.</li>
+            <li>Ingeniería: Diseño de estructuras, análisis de circuitos eléctricos, navegación.</li>
+            <li>Astronomía: Cálculo de órbitas planetarias, distancias a estrellas, movimiento de objetos celestes.</li>
+            <li>Geometría: Resolución de triángulos, cálculo de áreas y volúmenes, determinación de ángulos.</li><br>
+        </ul>
+        <h3><strong>Elementos Clave de las Identidades Trigonométricas:</strong></h3>
+        <ul>
+            <li>Funciones trigonométricas: seno (sin), coseno (cos), tangente (tan), cotangente (cot), secante (sec), cosecante (csc).</li>
+            <li>Ángulos: Cualquier valor de ángulo en radianes o grados. Ángulos relacionados como sumas, diferencias, dobles, triples, etc.</li>
+            <li>Operaciones matemáticas: Suma (+), Resta (-), Multiplicación (*), División (/), Potenciación (^), Raíz cuadrada (√).</li>
+            <li>Constantes: π (pi), e (Euler), i (unidad imaginaria).</li>
+        </ul> 
+    </section>
+    <section id="videos">
+        <h2><strong>Videos Explicativos</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Identidades Trigonométricas, Introducción</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/PbvKVSWyvpI?si=HtUJTQhnovXq1eCq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Identidades Trigonométricas, Identidades Recíprocas</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/3FjBlgSSlok?si=epakOMvisQNrEqu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Identidades Trigonométricas, Identidades Pitagóricas</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/jDAsavdm7Mc?si=twHeOIjb6JTbSoA7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Identidades Trigonométricas Simplificación, Ejemplo 1</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/ox1wH5OORn8?si=yolNBL0nbBQ7OFYF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Identidades Trigonométricas Simplificación, Ejemplo 2</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/Vsg_CuRHXMA?si=kJvoKM-X2gYfgP19" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Identidades Trigonométricas Simplificación, Ejemplo 3</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/oApTW3rMmoM?si=7MupD3adziBJXlZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ejercicios">
+        <h2><strong>Ejercicios</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                        <div class="ejercicio">
+                            <h5 class="enunciado">Ejercicio: Simplificar la expresión</h5>
+                            <p>Simplificar la expresión: sin^2(x) + cos^2(x) - 2 * sin(x) * cos(x)</p>
+                            <div class="solucion">
+                                <p>Solución:</p>
+                                <ol>
+                                    <li>Utilizando la identidad pitagórica: sin^2(x) + cos^2(x) = 1</li>
+                                    <li>Sustituimos en la expresión original: 1 - 2 * sin(x) * cos(x)</li>
+                                    <li>Utilizando la fórmula del ángulo doble para el seno: sin(2x) = 2 * sin(x) * cos(x)</li>
+                                    <li>Sustituimos en la expresión anterior: 1 - sin(2x)</li>
+                                </ol><br>
+                                <p>Resultado final: 1 - sin(2x)</p>
+                            </div>
+                        </div>
+                    
+                        <div class="ejercicio">
+                            <h5 class="enunciado">Ejercicio: Demostrar la identidad</h5>
+                            <p>Demostrar la identidad: tan(x) * tan(y) = (sin(x) * sin(y)) / (cos(x) * cos(y))</p>
+                            <div class="solucion">
+                                <p>Solución:</p>
+                                <ol>
+                                    <li>Comenzamos por la definición de la tangente: tan(x) = sin(x) / cos(x)</li>
+                                    <li>Sustituimos en la identidad que queremos demostrar: (sin(x) / cos(x)) * (sin(y) / cos(y)) = (sin(x) * sin(y)) / (cos(x) * cos(y))</li>
+                                    <li>Simplificando la expresión: sin(x) * sin(y) / cos(x) * cos(y) = (sin(x) * sin(y)) / (cos(x) * cos(y))</li>
+                                </ol><br>
+                                <p>La ecuación se cumple, por lo tanto, la identidad ha sido demostrada.</p>
+                            </div>
+                        </div>
+                    
+                        <div class="ejercicio">
+                            <h5 class="enunciado">Ejercicio: Encontrar el valor de la expresión</h5>
+                            <p>Encontrar el valor de la expresión: cos^2(45°) - sin^2(45°)</p>
+                            <div class="solucion">
+                                <p>Solución:</p>
+                                <ol>
+                                    <li>Utilizando la identidad pitagórica: cos^2(45°) + sin^2(45°) = 1</li>
+                                    <li>Sustituimos en la expresión original: 1 - sin^2(45°)</li>
+                                    <li>Sabemos que sin(45°) = √2/2, por lo tanto: 1 - (√2/2)^2</li>
+                                    <li>Simplificando la expresión: 1 - 1/2</li>
+                                </ol><br>
+                                <p>Resultado final: 1/2</p>
+                            </div>
+                        </div>
+    
+</ol>
+</div>
+</div>
+                        
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                        <div class="ejercicio">
+                            <p class="enunciado">Simplificar las siguientes expresiones:</p>
+                            <ol>
+                                <li>a) sin^2(x) + cos^2(x) - tan^2(x)</li>
+                                <li>b) cos(2θ) - 2 * cos^2(θ) + 1</li>
+                                <li>c) (sin(α) + cos(α))^2 - (sin(α) - cos(α))^2</li>
+                            </ol>
+                        </div><br>
+                    
+                        <div class="ejercicio">
+                            <p class="enunciado">Demostrar las siguientes identidades:</p>
+                            <ol>
+                                <li>a) tan(x) + cot(x) = sec^2(x)</li>
+                                <li>b) sin(3θ) = 3 * sin(θ) - 4 * sin^3(θ)</li>
+                                <li>c) cos(α) * cos(β) - sin(α) * sin(β) = cos(α + β)</li>
+                            </ol>
+                        </div><br>
+                    
+                        <div class="ejercicio">
+                            <p class="enunciado">Encontrar el valor de las siguientes expresiones:</p>
+                            <ol>
+                                <li>a) sin^2(30°) + cos^2(60°)</li>
+                                <li>b) tan(45°) * cot(45°)</li>
+                                <li>c) sec(60°) - cos(60°)</li>
+                            </ol>
+                        </div><br>
+                    
+                        <div class="ejercicio">
+                            <p class="enunciado">Desarrollar las siguientes expresiones:</p>
+                            <ol>
+                                <li>a) sin(75°)</li>
+                                <li>b) cos(15°)</li>
+                                <li>c) tan(105°)</li>
+                            </ol>
+                        </div><br>
+                    
+                        <div class="ejercicio">
+                            <p class="enunciado">Resolver las siguientes ecuaciones trigonométricas:</p>
+                            <ol>
+                                <li>a) 2 * sin(x) * cos(x) - 1 = 0</li>
+                                <li>b) tan^2(x) - 3 * tan(x) + 2 = 0</li>
+                                <li>c) sin(2θ) = 2 * sin(θ)</li>
+                            </ol>
+                        </div>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2><strong>Formulario de Fórmulas</strong></h2>
+        <ol>
+            <div class="seccion">
+                <h5 class="titulo">Identidades Fundamentales</h5>
+                <div class="formula">
+                    <h6>Identidad pitagórica:</h6>
+                    <ul>
+                    <li>sin^2(θ) + cos^2(θ) = 1</li>
+                </ul>
+                </div>
+        
+                <div class="formula">
+                    <h6>Fórmulas de ángulos dobles:</h6>
+                    <ul>
+                        <li>sin(2θ) = 2 * sin(θ) * cos(θ)</li>
+                        <li>cos(2θ) = 2 * cos^2(θ) - 1 = 1 - 2 * sin^2(θ)</li>
+                    </ul>
+                </div>
+        
+                <div class="formula">
+                    <h6>Fórmulas de suma y diferencia (primera ecuación de cada):</h6>
+                    <ul>
+                        <li>sin(θ + α) = sin(θ) * cos(α) + cos(θ) * sin(α)</li>
+                        <li>cos(θ + α) = cos(θ) * cos(α) - sin(θ) * sin(α)</li>
+                        <li>tan(θ + α) = (tan(θ) + tan(α)) / (1 - tan(θ) * tan(α))</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="seccion">
+                <h5 class="titulo">Identidades de Producto a Suma (primera ecuación de cada):</h5>
+                <ul>
+                    <li>sin(α) * cos(β) = (1/2) [sin(α + β) + sin(α - β)]</li>
+                    <li>cos(α) * cos(β) = (1/2) [cos(α + β) + cos(α - β)]</li>
+                    <li>sen(α) * sen(β) = (1/2) [cos(α - β) - cos(α + β)]</li>
+                    <li>cos(α) * sen(β) = (1/2) [sin(α + β) - sen(α - β)]</li>
+                </ul>
+            </div>
+        
+            <div class="seccion">
+                <h5 class="titulo">Identidades de Reducción de Potencias (primera ecuación de cada):</h5>
+                <ul>
+                    <li>sen^2(θ) = (1 - cos(2θ))/2</li>
+                    <li>cos^2(θ) = (1 + cos(2θ))/2</li>
+                </ul>
+            </div>
+        
+    </section>
+</body>
+</html>

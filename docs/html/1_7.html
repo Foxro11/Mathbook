@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECUACIONES CUADRÁTICAS</title>
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styleprimersemestre.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- CNDJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #c7d7fa;
+    /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,#fbd320, #c7f883,#73fc33);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fbd320, #c7f883,#73fc33);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center> <h1>Ecuaciones cuadráticas</h1></center>
+    </header>
+    <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>Las ecuaciones cuadráticas, también conocidas como ecuaciones de segundo grado, son ecuaciones de la forma \( ax^2 + bx + c = 0 \), donde \( a \), \( b \) y \( c \) son números reales y \( a \) no es igual a 0. La variable \( x \) es la incógnita que queremos determinar.</p>
+    </section>
+    <section id="explicacion">
+        <h2>Explicación Detallada</h2>
+
+        <h3>Partes de una ecuación cuadrática:</h3>
+        <ul>
+            <li><strong>Coeficiente cuadrático:</strong>El número que acompaña a la variable \( x^2 \).</li>
+            <li><strong>Coeficiente lineal:</strong>El número que acompaña a la variable \( x \).</li>
+            <li><strong>Término independiente:</strong>El número que no tiene variable.</li>
+            <li><strong>Solución:</strong>El valor de la variable que hace que la ecuación sea verdadera.</li>
+        </ul>
+
+        <h3>Métodos para resolver ecuaciones cuadráticas:</h3>
+        <ul>
+            <li><strong>Factorización:</strong>Se busca factorizar la ecuación como un producto de dos binomios.</li>
+            <li><strong>Fórmula general:</strong>Se utiliza la fórmula \( x = \frac{{-b \pm \sqrt{{b^2 - 4ac}}}}{2a} \) para obtener las soluciones de la ecuación.</li>
+            <li><strong>Completar el cuadrado:</strong>Se transforma la ecuación a una forma que se pueda resolver fácilmente.</li>
+        </ul>
+    </section>
+    <section id="videos">
+        <h2>Videos Explicativos</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ecuación cuadrática | Introducción</h5>
+                    <p class="card-text">Breve introducción a la ecuación cuadrática explicando qué es solucionar una ecuación y porqué algunas veces hay 1, 2 o ninguna solución, dentro del curso de ecuación cuadrática.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/_bP6NowsO-Y?si=uGdLZRXirqysIl4-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ecuación cuadrática por factorización | Ejemplo 1</h5>
+                    <p class="card-text">Explicación detallada de la forma de resolver una ecuación cuadrática por factorización, primer ejemplo por factorización del trinomio de la forma \( x^2+bx+c \), dentro del curso de ecuación cuadrática.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/PTJx4W-lQbE?si=kqPobP7lCGjMjID_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ecuación cuadrática por factorización | Ejemplo 2</h5>
+                    <p class="card-text">Explicación detallada de la forma de resolver una ecuación cuadrática por factorización, segundo ejemplo por factorización del trinomio de la forma \( x^2+bx+c \), dentro del curso de ecuación cuadrática.</p>
+                        <iframe width="245" height="147" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ecuación cuadrática completando cuadrados | Ejemplo 1</h5>
+                    <p class="card-text">Primer ejemplo de solución de la ecuación cuadrática o de segundo grado por el método de completar el trinomio cuadrado perfecto.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/51Mjg1OVjTo?si=Al7ISjWjrJn10dHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ecuación cuadrática por fórmula general | Ejemplo 1</h5>
+                    <p class="card-text">Explicación detallada de la forma de resolver una ecuación cuadrática, primer ejemplo de la solución por la formula general, dentro del curso de ecuación cuadrática.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/BxrJmKdPHRs?si=fHNIdC7RCFZcx1Z3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Demostración de la fórmula general</h5>
+                    <p class="card-text">Explicación de la famosa formula general la cuál se usa para resolver cualquier ecuación de segundo grado o ecuación cuadrática.</p>
+                        <iframe width="245" height="147" src="https://www.youtube.com/embed/1nWxqy3V-FU?si=8V3GVwpT6NkALkMN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ejercicios">
+        <h2>Ejercicios</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                        <li>Ejercicio 1: Resuelve la ecuación \( x^2 + 4x + 3 = 0 \).</li>
+                        <p>Solución:</p>
+                        <ul>\(x + 1 = 0\) ó \(x + 3 = 0\)</ul>
+                        <ul>\((x + 1)(x + 3) = 0\)</ul>
+                        <ul>\(x = -1 \) ó \( x = -3\)</ul>
+                        
+                        <li>Ejercicio 2: Resuelve la ecuación \( x^2 - 5x + 6 = 0 \).</li>
+                        <p>Solución:</p>
+                        <ul>\(x = \frac{{-(-5) \pm \sqrt{{((-5)^2 - 4(1)(6))}}}}{2(1)}\)</ul>
+                        <ul>\(x = \frac{{5 \pm \sqrt{{1}}}}{2}\)</ul>
+                        <ul>\(x = \frac{{5 \pm 1}}{2}\)</ul>
+                        <ul>\(x = 2 or x = 3\)</ul>
+                    </ol>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                        <li>Ejercicio 1: Un triángulo tiene un área de 20 metros cuadrados y una base de 5 metros. ¿Cuánto mide la altura del triángulo?</li>
+                        <li>Ejercicio 2: Una pelota se lanza al aire y alcanza una altura máxima de 10 metros. ¿Cuánto tiempo tarda la pelota en alcanzar el suelo?</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2>A destacar</h2>
+        <ul>
+            <li>Ecuación cuadrática: \( ax^2 + bx + c = 0 \)</li>
+            <li>Fórmula general: \( x = \frac{{-b \pm \sqrt{{b^2 - 4ac}}}}{2a} \)</li>
+            <li>Discriminante: \( b^2 - 4ac \)</li>
+        </ul>
+    </section>
+</body>
+</html>

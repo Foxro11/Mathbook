@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje y Expresiones Algebraicas</title>
+   
+
+     <!-- LINKS -->
+     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+     <!-- FUENTES -->
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styleprimersemestre.css">
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+     <!-- CNDJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+     
+      <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #d2f8ff;
+    /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,  #e2da00, #ffa827,#ff0000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,   #e2da00, #ffa827,#ff0000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center> <h1>Plano cartesiano</h1></center>
+    </header>
+    <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>En el tercer semestre de la materia de Pensamiento Matemático, se introduce el concepto de la recta como un objeto geométrico fundamental. La recta se define como una línea recta que se extiende infinitamente en ambas direcciones.</p>
+    </section>
+    <section id="explicacion">
+        <h2>Explicación Detallada</h2>
+        <h3>Tipos de rectas:</h3>
+        <ul>
+            <li><strong>Rectas horizontales:</strong> son paralelas al eje X y tienen una pendiente de 0.</li>
+            <li><strong>Rectas verticales: </strong> son paralelas al eje Y y tienen una pendiente de infinito.</li>
+            <li><strong>Rectas oblicuas:</strong>  no son paralelas ni al eje X ni al eje Y.</li>
+        </ul>
+        <h3>Ecuación de la recta:</h3>
+        <p>La ecuación de la recta es una expresión matemática que describe la posición de todos los puntos que se encuentran en la recta. Existen diferentes formas de expresar la ecuación de la recta, dependiendo de la información que se tenga sobre la misma.</p>
+        <ul>
+            <li>Ecuación pendiente-intercepto:</li>
+            <ul>\(y = mx + b\)</ul>
+            <p>Donde:</p>
+            <ul>
+                <li>m es la pendiente de la recta</li>
+                <li>b es el intercepto de la recta con el eje Y</li>
+            </ul>
+            <li>Ecuación punto-pendiente:</li>
+            <ul>\(y - y₁ = m(x - x₁)\)</ul>
+            <p>Donde:</p>
+            <ul>
+                <li>\((x₁, y₁)\) son las coordenadas de un punto que se encuentra en la recta</li>
+                <li>m es la pendiente de la recta</li>
+            </ul>
+            <li>Ecuación de dos puntos:</li>
+            <ul>\(y - y₂ = (y₁ - y₂) / (x₁ - x₂) (x - x₂)\)</ul>
+            <p>Donde:</p>
+            <ul>
+                <li>\((x₁, y₁) y (x₂, y₂)\) son las coordenadas de dos puntos que se encuentran en la recta</li>
+            </ul>
+        </ul>
+    </section>
+    <section id="videos">
+        <h2>Videos Explicativos</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tipos de rectas: Horizontal, vertical e inclinada</h5>
+                    <p class="card-text">Tipos de rectas: Horizontal, vertical e inclinada. Curso de ecuación de la recta video 2.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/sZGeOz6H0VY?si=oqDimQ2U28Ept2J-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Pendiente de la recta o inclinación de la recta</h5>
+                    <p class="card-text">Como encontrar la pendiente o inclinación de la recta cuando conocemos dos puntos, curso de ecuación de la recta.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/mi1a3OUQP64?si=8g6dm_MqfsY_xjOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Pendiente de la recta conociendo dos puntos | Ejemplo 1</h5>
+                    <p class="card-text">Ejemplo de cómo encontrar la pendiente de una recta cuando conocemos dos puntos, explicación de las fórmulas y ejemplos de aplicación de dicha fórmula.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/QAWt1CAYKr4?si=hyYhPCTSZVkkI0o8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Pendiente y ángulo de inclinación de la recta conociendo dos puntos</h5>
+                    <p class="card-text">Ejemplo de cómo encontrar la pendiente de una recta cuando conocemos dos puntos, en este tenemos que encontrar la pendiente y también el ángulo de inclinación de la recta.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/sCC0Chz8QeI?si=oCQBAK3AufbdvBS-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ecuación canónica o simétrica de la recta</h5>
+                    <p class="card-text">Conceptos básicos de la ecuación canónica o simétrica de la recta, curso de ecuación de la recta.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/qdjPfCeqrfk?si=7QJm4zKZSRG4UPX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ecuación de la recta Punto Pendiente | Ejemplo 1</h5>
+                    <p class="card-text">Primer ejemplo de cómo encontrar la ecuación de la recta cuando conocemos un punto y la pendiente.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/OjeKoMrL7lw?si=f2HRW1Xv1jJZvBdT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ejercicios">
+        <h2>Ejercicios</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                       <li>Ejercicio 1: Determinar la ecuación de la recta que pasa por los puntos \((2, 3) y (5, 7)\).</li>
+                       <p>Solución:</p>
+                       <p>Primero, calculamos la pendiente de la recta:</p>
+                       <ul>\(m = (y₂ - y₁) / (x₂ - x₁) = (7 - 3) / (5 - 2) = 4 / 3\)</ul>
+                       <p>Luego, utilizamos la ecuación punto-pendiente para obtener la ecuación de la recta:</p>
+                       <ul>\(y - 3 = 4/3 (x - 2)\)</ul>
+                       <li>Ejercicio 2: Una recta tiene una pendiente de 2 y un intercepto con el eje Y de -3. ¿Cuál es la ecuación de la recta?</li>
+                       <p>Solución:</p>
+                       <p>Utilizamos la ecuación pendiente-intercepto para obtener la ecuación de la recta:</p>
+                       <ul>\(y = mx + b = 2x - 3\)</ul>
+
+                    </ol>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                        <li>Ejercicio 1: Determinar la ecuación de la recta que pasa por el punto \((1, 4)\) y tiene una pendiente de -2.</li>
+                        <li>Ejercicio 2: Una recta es paralela al eje X y pasa por el punto \((3, 2)\). ¿Cuál es la ecuación de la recta?</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2>Formulario de Fórmulas</h2>
+        <ol>
+            <li>Ecuación pendiente-intercepto:</li>
+            <ul>\(y = mx + b\)</ul>
+            <li>Ecuación punto-pendiente:</li>
+            <ul>\(y - y₁ = m(x - x₁)\)</ul>
+            <li>Ecuación de dos puntos:</li>
+            <ul>\(y - y₂ = (y₁ - y₂) / (x₁ - x₂) (x - x₂)\)</ul>
+        </ol>
+    </section>
+</body>
+</html>

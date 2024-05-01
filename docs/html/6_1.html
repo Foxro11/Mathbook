@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje y Expresiones Algebraicas</title>
+   
+
+     <!-- LINKS -->
+     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+     <!-- FUENTES -->
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styleprimersemestre.css">
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+     <!-- CNDJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+      <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #d2f8ff;
+    /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,  #ffbb00, #b8007a,#ff9100);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,   #dab201, #dd00b8,#eea215);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center> <strong><h1>Distribución de Frecuencia</h1></strong></center>
+    </header>
+    <section id="introduccion">
+        <h2><strong>Introducción</strong></h2>
+        <p>La distribución de frecuencia es una herramienta estadística que permite organizar y resumir datos numéricos, mostrando la frecuencia con la que aparecen ciertos valores o rangos de valores dentro de un conjunto de datos. Es una herramienta fundamental para comprender la distribución de la información y visualizar las tendencias en los datos.</p>
+    </section>
+    <section id="explicacion">
+        <h3><strong>Tipos de Distribuciones de Frecuencia:</strong></h3>
+        <ul>
+            <li>Distribución de frecuencia simple: Se utiliza para datos categóricos o cualitativos, como colores, preferencias, etc. La tabla de frecuencia simple muestra la cantidad de veces que aparece cada categoría.</li>
+            <li>Distribución de frecuencia agrupada: Se utiliza para datos numéricos. Los datos se agrupan en intervalos y se registra la frecuencia de cada intervalo. La tabla de frecuencia agrupada muestra los intervalos, la frecuencia absoluta (número de datos en cada intervalo), la frecuencia relativa (frecuencia absoluta dividida por el total de datos) y la frecuencia acumulada (suma de las frecuencias relativas hasta el intervalo actual).</li><br>
+        </ul>
+        <h3><strong>Utilidad de las Distribuciones de Frecuencia:</strong></h3>
+        <ul>
+            <li>Encuestas: Se puede utilizar para analizar las respuestas a preguntas de opción múltiple.</li>
+            <li>Censos: Se puede utilizar para analizar la distribución de la población por edad, sexo, etc.</li>
+            <li>Control de calidad: Se puede utilizar para analizar la distribución de defectos en un producto.</li>
+            <li>Estudios de mercado: Se puede utilizar para analizar las preferencias de los consumidores.</li><br>
+        </ul>
+        <h3><strong>Elementos de una Distribución de Frecuencia:</strong></h3>
+        <ul>
+            <li>Variable: La característica que se está midiendo.</li>
+            <li>Valores: Los diferentes valores que puede tomar la variable.</li>
+            <li>Frecuencia: La cantidad de veces que aparece cada valor.</li>
+            <li>Intervalos: Rangos de valores que se agrupan en la distribución de frecuencia agrupada.</li>
+            <li>Frecuencia absoluta: Número de datos en cada intervalo.</li>
+            <li>Frecuencia relativa: Frecuencia absoluta dividida por el total de datos.</li>
+            <li>Frecuencia acumulada: Suma de las frecuencias relativas hasta el intervalo actual.</li>
+        </ul> 
+    </section>
+    <section id="videos">
+        <h2><strong>Videos Explicativos</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tabla de Frecuencias, Simple o en Intervalos</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/a4cI02iW_zQ?si=CN45OJduOMHdUYP7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tabla de Frecuencias Simple, Ejemplo 1</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/IHuZKvCh3Mc?si=9PP47QC6hXyIF1fX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tabla de Frecuencias, Ejemplo 2</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/Pv-7vgYRtD8?si=x9hoB0DuwLZLVqup" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Regla de Sturges, Tabla de Frecuencias</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/5fe9VJb85H8?si=wd1n2lYnySZnyeK4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tabla de Frecuencias Agrupada en Intervalos, Ejemplo 1</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/Nm7log51vFA?si=mfvp-N6YzjUxEVG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tabla de Frecuencias Agrupada en Intervalos, Ejemplo 2</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/BitnpiBPGc4?si=Z-BFNzlhAyl8EG-l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ejercicios">
+        <h2><strong>Ejercicios</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                        <li>En una encuesta a 50 estudiantes sobre su color favorito, se obtuvieron los siguientes resultados:</li>
+
+  <ul>
+    <li>Azul: 15</li>
+    <li>Rojo: 10</li>
+    <li>Verde: 12</li>
+    <li>Amarillo: 8</li>
+    <li>Morado: 5</li><br>
+  </ul>
+
+  <p>Solución:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Color</th>
+        <th>Frecuencia</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Azul</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>Rojo</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Verde</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>Amarillo</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>Morado</td>
+        <td>5</td>
+      </tr>
+    </tbody>
+  </table><br>
+
+  <li>Las edades de 20 estudiantes de una clase son:</li>
+
+  <p>18, 19, 20, 21, 22, 20, 21, 23, 24, 25, 22, 23, 24, 25, 26, 27, 28, 29, 28, 30</p>
+
+  <p>Solución:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Intervalo</th>
+        <th>Frecuencia absoluta</th>
+        <th>Frecuencia relativa</th>
+        <th>Frecuencia acumulada</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>18-20</td>
+        <td>5</td>
+        <td>0.25</td>
+        <td>0.25</td>
+      </tr>
+      <tr>
+        <td>21-23</td>
+        <td>7</td>
+        <td>0.35</td>
+        <td>0.6</td>
+      </tr>
+      <tr>
+        <td>24-26</td>
+        <td>4</td>
+        <td>0.2</td>
+        <td>0.8</td>
+      </tr>
+      <tr>
+        <td>27-29</td>
+        <td>3</td>
+        <td>0.15</td>
+        <td>0.95</td>
+      </tr>
+      <tr>
+        <td>30-32</td>
+        <td>1</td>
+        <td>0.05</td>
+        <td>1</td>
+      </tr>
+    </tbody>
+  </table>
+    
+</ol>
+</div>
+</div>
+                        
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                        
+                        <li>Ejercicio: Distribución de Frecuencia Simple</li>
+
+                        <p>En una encuesta a 100 personas sobre su género, se obtuvieron los siguientes resultados:</p>
+                      
+                        <ul>
+                          <li>Mujeres: 60</li>
+                          <li>Hombres: 40</li>
+                        </ul><br>
+                      
+                        <li>Ejercicio: Distribución de Frecuencia Agrupada</li>
+
+                        <p>Las calificaciones de un examen de matemáticas de 30 estudiantes son:</p>
+                      
+                        <p>4, 5, 6, 7, 8, 9, 10, 10, 10, 11, 12, 12, 13, 13, 14, 15, 15, 16, 17, 18, 19, 20, 20, 20, 21, 22, 23, 24, 25</p>
+                      
+                        <li>Ejercicio: Cálculo de Medidas de Posición (¡Resuélvelo usando la tabla completada del Ejercicio 2!)</li>
+
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2><strong>Formulario de Fórmulas</strong></h2>
+        <ol>
+          <h2>Cálculo de Frecuencias</h2>
+
+          <ul>
+            <li>Frecuencia absoluta (FA): FA = # datos en cada intervalo</li>
+            <li>Frecuencia relativa (FR): FR = FA / Total datos</li>
+            <li>Frecuencia acumulada (FAC): FAC = FA + Frecuencia acumulada del intervalo anterior</li>
+          </ul>
+        
+          <h2>Medidas de Posición</h2>
+        
+          <ul>
+            <li>Media (X̅): X̅ = Σx / n</li>
+            <li>Mediana (Me): Me = Valor divide distribución en 2 partes con igual número de datos</li>
+            <li>Moda (Mo): Mo = Valor con mayor frecuencia</li>
+          </ul>
+        
+          <h2>Medidas de Dispersión</h2>
+        
+          <ul>
+            <li>Rango (R): R = Valor máximo - Valor mínimo</li>
+            <li>Desviación media (DM): DM = Σ|x - X̅| / n</li>
+            <li>Varianza (V): V = Σ(x - X̅)² / n</li>
+            <li>Coeficiente de variación (CV): CV = (DM / X̅) * 100%</li>
+          </ul>
+        
+          <h2>Gráficos</h2>
+        
+          <ul>
+            <li>Histograma: Representa frecuencia de cada intervalo con barras.</li>
+            <li>Diagrama de caja y bigotes: Muestra distribución a través de 5 valores: mínimo, Q1, mediana, Q3, máximo.</li>
+          </ul>
+        
+  </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje y Expresiones Algebraicas</title>
+   
+
+     <!-- LINKS -->
+     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+     <!-- FUENTES -->
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styleprimersemestre.css">
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+     <!-- CNDJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+      <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #d2f8ff;
+    /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,  #a7ff02, #ff2eee,#f36eff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,   #fc80f5, #9dff00,#ee15dc);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center> <strong><h1>Integral Definida</h1></strong></center>
+    </header>
+    <section id="introduccion">
+        <h2><strong>Introducción</strong></h2>
+        <p>Las integrales definidas son una herramienta matemática fundamental para calcular el área bajo una curva, el volumen de un sólido de revolución, la longitud de una curva y muchas otras cantidades importantes en física, ingeniería y economía.<br>
+            En términos simples, una integral definida calcula la suma de un número infinito de rectángulos infinitesimales de ancho constante que se aproximan a la curva bajo estudio.<br>  
+            El proceso de calcular una integral definida se llama integración.</p>
+    </section>
+    <section id="explicacion">
+        <h3><strong>Conceptos:</strong></h3>
+        <ul>
+            <li>Función: La función a integrar, representada por f(x).</li>
+            <li>Intervalo de integración: El intervalo [a, b] donde se calcula la integral.</li>
+            <li>Límite de integración: Los valores a y b que definen el intervalo de integración.</li>
+            <li>Suma de Riemann: Una aproximación del área bajo la curva mediante rectángulos.</li>
+            <li>Valor de la integral: El límite de la suma de Riemann cuando el número de rectángulos tiende a infinito.</li>
+            <li>Teorema fundamental del cálculo: Este teorema establece una conexión entre la integración y la diferenciación, lo que permite calcular integrales definidas mediante antiderivadas.</li><br>
+        </ul>
+        <h3><strong>Clasificación de Integral Definida :</strong></h3>
+        <ul>
+            <li>Integrales impropias: Son integrales donde el intervalo de integración es infinito o la función presenta discontinuidades.</li>
+            <li>Integrales de Riemann-Stieltjes: Son una generalización de las integrales de Riemann que permiten integrar funciones con respecto a funciones no monótonas.</li><br>
+        </ul>
+        <h3><strong>Aplicaciones en Diversas Áreas:</strong></h3>
+        <ul>
+            <li>Cálculo de áreas y volúmenes: Se pueden usar para calcular el área bajo una curva, el volumen de un sólido de revolución o la longitud de una curva.</li>
+            <li>Cálculo de trabajo: Se pueden usar para calcular el trabajo realizado por una fuerza variable a lo largo de una distancia.</li>
+            <li>Cálculo de promedios: Se pueden usar para calcular el promedio de una función sobre un intervalo.</li>
+            <li>Cálculo de probabilidades: Se pueden usar para calcular la probabilidad de un evento en un espacio de probabilidad.</li>
+        </ul> 
+    </section>
+    <section id="videos">
+        <h2><strong>Videos Explicativos</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integrales Definidas, Introducción </h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/TocqVkBzDrA?si=P2PQPUVDtpnLfk6p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integrales Definidas, Ejemplo 1</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/K15rvmw2WwI?si=6gT-7k8Fow670oV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integrales Definidas, Ejemplo 2</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/tqbmfCDW3lM?si=qOLJL4ElwWQiFPU_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integrales Definidas, Ejemplo 3</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/jBoJzwiXFZw?si=xLPd1U6LB90CjvpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integrales Definidas, Ejemplo 4</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/3GyUg3h0qSI?si=4mLnWjkzLBtX9EzW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integral definida, Área bajo una Parábola</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/6MIXICxq7GI?si=GDjC4vZ-RFwfiCfh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ejercicios">
+        <h2><strong>Ejercicios</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                        <li>Ejercicio 1: Área bajo la curva</li>
+  <p>Función: f(x) = x²</p>
+  <p>Intervalo: [0, 1]</p>
+  <p>Integral: ∫₀¹ x² dx</p>
+  <p>Antiderivada: F(x) = (1/3)x³</p>
+  <p>Resultado: F(1) - F(0) = 1/3</p>
+
+  <li>Ejercicio 2: Volumen de revolución</li>
+  <p>Función: f(x) = e^x</p>
+  <p>Intervalo: [0, 1]</p>
+  <p>Integral: π ∫₀¹ (e^x)² dx</p>
+  <p>Resultado: π (e² - 1)</p>
+
+  <li>Ejercicio 3: Longitud de curva</li>
+  <p>Función: f(x) = √x</p>
+  <p>Intervalo: [0, 1]</p>
+  <p>Integral: ∫₀¹ √(1 + (1/2)x²) dx</p>
+  <p>Resultado: 4/3</p>
+                            
+    </ul>
+    
+</ol>
+</div>
+</div>
+                        
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                        <li>Ejercicio: Área bajo la curva</li>
+  <p>Función: f(x) = x^3 - 2x^2 + 1</p>
+  <p>Intervalo: [0, 2]</p>
+  <p>Integral: ∫₀² (x^3 - 2x^2 + 1) dx</p>
+  <p>Pregunta: ¿Cuál es el área bajo la curva?</p>
+
+  <li>Ejercicio: Volumen de revolución</li>
+  <p>Función: f(x) = sin(x)</p>
+  <p>Intervalo: [0, π]</p>
+  <p>Integral: π ∫₀^π (sin(x))^2 dx</p>
+  <p>Pregunta: ¿Cuál es el volumen del sólido de revolución?</p>
+
+  <li>Ejercicio: Longitud de curva</li>
+  <p>Función: f(x) = ln(x)</p>
+  <p>Intervalo: [1, 2]</p>
+  <p>Integral: ∫₁² √(1 + (1/x)^2) dx</p>
+  <p>Pregunta: ¿Cuál es la longitud de la curva?</p>
+
+  <li>Ejercicio: Integral definida</li>
+  <p>Integral: ∫_0^1 e^(-x^2) dx</p>
+  <p>Pregunta: ¿Cuál es el valor de la integral?</p>
+
+  <li>Ejercicio: Integral definida</li>
+  <p>Integral: ∫_1^2 1/x dx</p>
+  <p>Pregunta: ¿Cuál es el valor de la integral?</p>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2><strong>Formulario de Fórmulas</strong></h2>
+        <ol>
+            <h5>Integrales definidas básicas</h5>
+            <ul>
+              <li>∫₀^¹ f(x) dx</li>
+              <li>∫_a^b f(x) dx</li>
+              <li>F(b) - F(a)</li>
+            </ul>
+          
+            <h5>Definiciones formales</h5>
+            <ul>
+              <li>∫ f(x) dx = lim_(n→∞) Σ_(i=0)^(n-1) f(a + iΔx) Δx</li>
+              <li>∫ f(x) dx = lim_(n→∞) Σ_(i=0)^(n-1) f(a + (i + 1/2)Δx) Δx</li>
+              <li>∫ f(x) dx = lim_(n→∞) Σ_(i=0)^(n-1) (f(a + iΔx) + f(a + (i+1)Δx)) Δx / 2</li>
+              <li>∫ f(x) dx = lim_(n→∞) Σ_(i=1)^n f(a + iΔx) Δx</li>
+            </ul>
+          
+            <h5>Ejemplos de integrales de funciones específicas</h5>
+            <ul>
+              <li>∫ e^x dx = e^x + C</li>
+              <li>∫ ln(x) dx = x ln(x) - x + C</li>
+              <li>∫ sin(x) dx = -cos(x) + C</li>
+              <li>∫ cos(x) dx = sin(x) + C</li>
+            </ul>
+    </section>
+</body>
+</html>

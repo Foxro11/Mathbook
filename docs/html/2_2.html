@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje y Expresiones Algebraicas</title>
+   
+
+     <!-- LINKS -->
+     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+     <!-- FUENTES -->
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styleprimersemestre.css">
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+     <!-- CNDJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+      <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #d2f8ff;
+    /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,  #4781ff, #8f2eff,#45daff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,   #00ffff, #cb8cff,#157aee);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center> <strong><h1>Congruencia y Semejanza de Triangulos</h1></strong></center>
+    </header>
+    <section id="introduccion">
+        <h2><strong>Introducción</strong></h2>
+        <p>En geometría, los triángulos son figuras planas formadas por tres segmentos de recta que se unen en pares en tres puntos llamados vértices. Estudiar sus propiedades es fundamental para comprender otras formas geométricas más complejas. Dos conceptos importantes relacionados con los triángulos son la congruencia y la semejanza.</p>
+    </section>
+    <section id="explicacion">
+        <h3><strong>Criterios de Congruencia::</strong></h3>
+        <ul>
+            <li>Lado-Lado-Lado (LLL): Si los tres lados de un triángulo tienen la misma longitud que los tres lados del otro triángulo, entonces los triángulos son congruentes</li>
+            <li>Angulo-Angulo-Lado (AAL): Si dos ángulos de un triángulo tienen la misma medida que dos ángulos del otro triángulo, y el lado comprendido entre esos dos ángulos en ambos triángulos tiene la misma longitud, entonces los triángulos son congruentes.</li>
+            <li>Angulo-Lado-Angulo (ALA): Si dos ángulos de un triángulo tienen la misma medida que dos ángulos del otro triángulo, y uno de los lados no comprendidos entre esos dos ángulos en ambos triángulos tiene la misma longitud, entonces los triángulos son congruentes.</li><br>
+        </ul>
+        <h3><strong>Utilidad de la Congruencia y Semejanza de Triángulos:</strong></h3>
+        <ul>
+            <li>Cálculo de longitudes desconocidas: Si se conocen las medidas de algunos lados y ángulos de un triángulo y se puede determinar si es congruente o similar a otro triángulo, se pueden usar las proporciones entre sus lados para calcular las longitudes desconocidas.</li>
+            <li>Demostración de teoremas: La congruencia y semejanza de triángulos son herramientas esenciales para demostrar teoremas geométricos, como el teorema de Pitágoras o el teorema de Tales.</li>
+            <li>Resolución de problemas de trigonometría: La relación entre los lados y ángulos de un triángulo es fundamental para la trigonometría, permitiendo calcular razones trigonométricas como seno, coseno y tangente.</li>
+            <li>Clasificación de triángulos: La congruencia y semejanza son criterios para clasificar triángulos según sus lados y ángulos. Por ejemplo, dos triángulos equiláteros son congruentes, mientras que dos triángulos rectángulos con la misma razón de lados son semejantes.</li>
+            <li>Propiedades de triángulos especiales: Las propiedades de triángulos específicos, como triángulos equiláteros, isósceles o rectángulos, se pueden deducir a partir de la congruencia y semejanza.</li>
+            <li>Construcción de figuras geométricas: La congruencia y semejanza permiten construir figuras geométricas con características específicas, como triángulos con lados o ángulos determinados.</li>
+            <li>Sólidos geométricos: La congruencia y semejanza de triángulos son propiedades que se encuentran en diversos sólidos geométricos, como pirámides y prismas.</li>
+            <li>Física: La congruencia y semejanza de triángulos se aplica en la física para resolver problemas relacionados con la óptica, la mecánica y la electromagnetismo.</li><br>
+        </ul>
+        <h3><strong>Criterios de Semejanza:</strong></h3>
+        <ul>
+            <li>Lado-Lado-Lado (LLL): Si los lados correspondientes de dos triángulos son proporcionales, entonces los triángulos son semejantes.</li>
+            <li>Angulo-Angulo (AA): Si dos ángulos de un triángulo tienen la misma medida que dos ángulos del otro triángulo, entonces los triángulos son semejantes.</li>
+            <li>Lado-Angulo-Lado (LAL): Si dos lados correspondientes de dos triángulos son proporcionales y el ángulo comprendido entre esos dos lados en ambos triángulos tiene la misma medida, entonces los triángulos son semejantes.</li>
+        </ul> 
+    </section>
+    <section id="videos">
+        <h2><strong>Videos Explicativos</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Congruencia y Semejanza de Triángulos, Diferencia</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/UgZiDr1gSxc?si=LmB5CIGBqwt-zG6G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Criterios para Triángulos Congruentes</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/hhpN91CSJpY?si=5Gkpnvhw7NKTNtOH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Criterios para Triángulos Semejantes</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/HBLPCEI_r4w?si=HqApYxx7_S0aP9gy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Triángulos Congruente, Ejercicio 1</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/FBeTFJUPxEA?si=hCQJTBI8z4kSrWOB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Triángulos Semejantes, Ejercicio 1</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/XYBOp1uDgAU?si=a9vCNRQkHFJyEaIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Criterios de Congruencia de Triángulos, Desde Cero</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/O4iUwCdb-bA?si=RRKMNcSmiuqcahT3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ejercicios">
+        <h2><strong>Ejercicios</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                        <h5>Ejercicio 1</h5>
+                        <svg width="200" height="150">
+                            <polygon points="50,10 150,10 100,120" fill="none" stroke="black" stroke-width="2"/>
+                            <text x="40" y="20">A</text>
+                            <text x="153" y="20">B</text>
+                            <text x="100" y="130">C</text>
+                          </svg>
+
+                          <p>
+                            Observamos los lados y ángulos de los triángulos:
+                          </p>
+                          <ul>
+                            <li>AB = DE</li>
+                            <li>BC = EF</li>
+                            <li>AC = DF</li>
+                            <li>∠ABC = ∠DEF</li>
+                            <li>∠BAC = ∠EDF</li>
+                            <li>∠ACB = ∠DFE</li>
+                          </ul><br>
+                          <p>
+                            Como todos los lados y ángulos correspondientes son iguales, podemos concluir que los triángulos ABC y DEF son congruentes por el criterio LLL (Lado-Lado-Lado).
+                          </p>
+
+                          <h5>Ejercicio 2</h5>
+
+                          <svg width="200" height="150">
+                            <polygon points="50,10 150,10 100,120" fill="none" stroke="black" stroke-width="2"/>
+                            <text x="40" y="20">A</text>
+                            <text x="150" y="20">B</text>
+                            <text x="100" y="130">C</text>
+                            <polygon points="100,50 200,50 150,120" fill="none" stroke="black" stroke-width="2"/>
+                            <text x="105" y="40">D</text>
+                            <text x="190" y="40">E</text>
+                            <text x="155" y="130">F</text>
+                          </svg>
+                          
+
+                          <p>
+                            Observamos los lados y ángulos de los triángulos:
+                          </p>
+                          <ul>
+                            <li>AB/DE = 2/3</li>
+                            <li>BC/EF = 2/3</li>
+                            <li>AC/DF = 2/3</li>
+                            <li>∠ABC = ∠DEF</li>
+                            <li>∠BAC = ∠EDF</li>
+                            <li>∠ACB = ∠DFE</li>
+                          </ul><br>
+                          <p>
+                            Como todos los lados correspondientes son proporcionales y los ángulos correspondientes son iguales, podemos concluir que los triángulos ABC y DEF son semejantes por el criterio LLL (Lado-Lado-Lado).
+                          </p>
+                          
+                          
+</ol>
+</div>
+</div>
+                        
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+
+  <li>Ejercicio: Proporcionalidad en Triángulos Semejantes</li><br>
+  <p>
+    En un triángulo ABC, AB = 5 cm, AC = 7 cm y ∠BAC = 45°. En un triángulo DEF, DE = 8 cm y ∠DEF = 45°. ¿Cuál es la longitud de DF si los triángulos ABC y DEF son semejantes?
+  </p>
+
+  <li>Ejercicio: Perímetro de un Triángulo</li><br>
+  <p>
+    Un triángulo ABC tiene un perímetro de 36 cm. Si los lados AB y AC son congruentes, y el lado BC es 6 cm más largo que cada uno de ellos, ¿cuáles son las longitudes de los lados del triángulo?
+  </p>
+
+  <li>Ejercicio: Razón de Semejanza</li><br>
+  <p>
+    Dos triángulos son semejantes con una razón de semejanza de 3:4. Si el lado más largo del triángulo menor mide 12 cm, ¿cuánto mide el lado más largo del triángulo mayor?
+
+                    
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2><strong>Formulario de Fórmulas</strong></h2>
+        <ol>
+
+            <h5>Congruencia de Triángulos</h5>
+        <ul>
+            <li>Lado-Lado-Lado (LLL)</li>
+            <li>Lado-Ángulo-Lado (LAL)</li>
+            <li>Ángulo-Lado-Ángulo (ALA)</li>
+        </ul>
+
+            <h5>Semejanza de Triángulos</h5>
+  <ul>
+    <li><b>Dos ángulos congruentes</li>
+    <li><b>Proporcionalidad de lados</b> (se puede expresar con una razón k = lado_1 / lado_2).</li>
+    <li>Lado-Ángulo-Lado (LAL)</li>
+  </ul>
+
+  <h5>Fórmulas derivadas de Semejanza</h5>
+  <ul>
+    <li><b>Razón de semejanza (k)</b>: k = lado_correspondiente_1 / lado_correspondiente_2 (para cualquier lado)</li>
+    <li><b>Proporcionalidad de segmentos</b>segmento_desconocido = k * segmento_conocido</li>
+  </ul>
+    </section>
+</body>
+</html>

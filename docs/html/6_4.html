@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje y Expresiones Algebraicas</title>
+   
+
+     <!-- LINKS -->
+     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+     <!-- FUENTES -->
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styleprimersemestre.css">
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+     <!-- CNDJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+      <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #d2f8ff;
+    /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,  #ffbb00, #b8007a,#ff9100);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,   #dab201, #dd00b8,#eea215);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center> <strong><h1>Medidas de Forma</h1></strong></center>
+    </header>
+    <section id="introduccion">
+        <h2><strong>Introducción</strong></h2>
+        <p>Las medidas de forma, también conocidas como medidas de apuntamiento, son herramientas estadísticas que nos permiten describir la forma de una distribución de frecuencia. Estas medidas complementan a las medidas de tendencia central y dispersión, proporcionando información adicional sobre la simetría, la concentración de datos y la existencia de valores atípicos.</p>
+    </section>
+    <section id="explicacion">
+        <h3><strong>Tipos de Medidas de Forma:</strong></h3>
+        <ul>
+            <li>Asimetría: Indica si la distribución se inclina hacia la izquierda (asimetría negativa) o hacia la derecha (asimetría positiva).</li>
+            <li>Curtosis: Mide la concentración de los datos alrededor de la media. Una distribución leptocúrtica es más puntiaguda que la normal, mientras que una platicúrtica es más aplanada.</li>
+            <li>Exceso de curtosis: Es una medida alternativa de curtosis que indica si la distribución es más o menos puntiaguda que la normal.</li><br>
+        </ul>
+        <h3><strong>Utilidad de las Medidas de Forma:</strong></h3>
+        <ul>
+            <li>Análisis de datos económicos: Las medidas de forma pueden ser utilizadas para comparar la distribución de ingresos en diferentes países.</li>
+            <li>Control de calidad: En la industria, se pueden usar para evaluar la calidad de un producto mediante la medición de la asimetría y la curtosis de la distribución de las características del producto.</li>
+            <li>Análisis de datos en ciencias sociales: Las medidas de forma pueden ser útiles para estudiar la distribución de variables como la altura, el peso o las puntuaciones en exámenes.</li><br>
+        </ul>
+        <h3><strong>Interpretación de las Medidas de Forma:</strong></h3>
+        <ul>
+            <h5>Asimetría:</h5>
+              <li>A > 0: Asimetría positiva (la cola derecha es más larga)</li>
+              <li>A = 0: Distribución simétrica</li>
+              <li>A < 0: Asimetría negativa (la cola izquierda es más larga)</li><br>
+
+             <h5>Curtosis:</h5>
+             <li>C > 3: Leptocúrtica (más puntiaguda)</li>
+             <li>C = 3: Mesocúrtica (normal)</li>
+             <li>C < 3: Platicúrtica (más aplanada)</li><br>
+
+             <h5>Exceso de curtosis:</h5>
+             <li>K > 0: Leptocúrtica</li>
+             <li>K = 0: Mesocúrtica</li>
+             <li>K < 0: Platicúrtica</li>
+        </ul>
+    </section>
+    <section id="videos">
+        <h2><strong>Videos Explicativos</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Medidas de Forma, Introducción 1</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/WfhyfPkB3EA?si=6PVk0rk6QnmvD66P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Medidas de forma: Asimetría y Curtosis, Teoría</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/Ap_xohQNe98?si=FPAbhjp6EIcNDXR2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Medidas de Forma, Introducción 2</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/IBTXBBVFFQk?si=oTYpEY9STUIwJUrH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Medidas de Forma, Sesgo y Curtosis</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/pFYEo1IkRKU?si=xl8fiZlg3ArJDBWZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Asimetría y Curtosis, Ejemplos Resueltos</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/IxxFdmFrud8?si=hRIHgMG7Zw-46B3J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Asimetría y Curtosis</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/ZnpJamvbdpg?si=9g2GRSFTeOksqt_Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ejercicios">
+        <h2><strong>Ejercicios</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                      <p>Este documento presenta dos ejercicios resueltos sobre el cálculo de asimetría, curtosis y coeficiente de asimetría de Pearson para ilustrar la aplicación de las medidas de forma.</p>
+
+                      <h5>Ejercicio 1</h5>
+                    
+                      <h6>Datos</h6>
+                    
+                      <ul>
+                        <li>2</li>
+                        <li>4</li>
+                        <li>6</li>
+                        <li>8</li>
+                        <li>10</li>
+                        <li>12</li>
+                        <li>14</li>
+                        <li>16</li>
+                        <li>18</li>
+                      </ul><br>
+                    
+                      <h6>Solución</h6>
+                    
+                      <p>Se calcula la media (X̅), desviación estándar (s), asimetría (A), curtosis (C) y coeficiente de asimetría de Pearson (K).</p>
+                    
+                      <ul>
+                        <li>Media (X̅): 10</li>
+                        <li>Desviación estándar (s): 5.77</li>
+                        <li>Asimetría (A): 0 (Distribución simétrica)</li>
+                        <li>Curtosis (C): 3.09 (Distribución mesocúrtica)</li>
+                        <li>Coeficiente de asimetría de Pearson (K): 0</li>
+                      </ul><br>
+                    
+                      <h6>Interpretación</h6>
+                    
+                      <ul>
+                        <li>La distribución es simétrica debido a una asimetría (A) igual a 0.</li>
+                        <li>La distribución es mesocúrtica porque la curtosis (C) está cercana a 3.</li>
+                        <li>El coeficiente de asimetría de Pearson (K) confirma la simetría.</li>
+                      </ul><br>
+                    
+                      <h5>Ejercicio 2</h5>
+                    
+                      <h6>Datos</h6>
+                    
+                      <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                      </ul><br>
+                    
+                      <h6>Solución</h6>
+                    
+                      <p>Observando la distribución, la mayoría de los datos se concentran en el centro, con valores más altos hacia la derecha.</p>
+                    
+                      <h6>Interpretación</h6>
+                    
+                      <p>La distribución es asimétrica a la derecha.</p>
+</ol>
+</div>
+</div>
+                        
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                      <p>Estos ejercicios te ayudarán a practicar el cálculo de asimetría, curtosis y coeficiente de asimetría de Pearson para diferentes conjuntos de datos.</p>
+
+                      <h5>Ejercicio 1</h5>
+                    
+                      <h6>Datos</h6>
+                    
+                      <ul>
+                        <li>5</li>
+                        <li>10</li>
+                        <li>15</li>
+                        <li>20</li>
+                        <li>25</li>
+                        <li>30</li>
+                        <li>35</li>
+                        <li>40</li>
+                        <li>45</li>
+                      </ul><br>
+                    
+                      <p>Calcula la asimetría, la curtosis y el coeficiente de asimetría de Pearson.</p>
+                    
+                      <h5>Ejercicio 2</h5>
+                    
+                      <h6>Datos</h6>
+                    
+                      <ul>
+                        <li>1</li>
+                        <li>3</li>
+                        <li>5</li>
+                        <li>7</li>
+                        <li>9</li>
+                        <li>11</li>
+                        <li>13</li>
+                        <li>15</li>
+                        <li>17</li>
+                        <li>19</li>
+                        <li>21</li>
+                      </ul><br>
+                    
+                      <p>Determina el tipo de asimetría (simétrica, derecha o izquierda).</p>
+                    
+                      <h5>Ejercicio 3</h5>
+                    
+                      <h6>Datos</h6>
+                    
+                      <table border="1">
+                        <tr>
+                          <th>Duración (minutos)</th>
+                          <th>Frecuencia</th>
+                        </tr>
+                        <tr>
+                          <td>1-5</td>
+                          <td>100</td>
+                        </tr>
+                        <tr>
+                          <td>6-10</td>
+                          <td>200</td>
+                        </tr>
+                        <tr>
+                          <td>11-15</td>
+                          <td>150</td>
+                        </tr>
+                        <tr>
+                          <td>16-20</td>
+                          <td>50</td>
+                        </tr>
+                        <tr>
+                          <td>Más de 20</td>
+                          <td>25</td>
+                        </tr>
+                      </table><br>
+                    
+                      <p>Calcula la asimetría, la curtosis y el coeficiente de asimetría de Pearson para la duración de las llamadas.</p>
+                    
+                      <h5>Ejercicio 4</h5>
+                    
+                      <h6>Datos</h6>
+                    
+                      <table border="1">
+                        <tr>
+                          <th>Calificación</th>
+                          <th>Frecuencia</th>
+                        </tr>
+                        <tr>
+                          <td>0-10</td>
+                          <td>5</td>
+                        </tr>
+                        <tr>
+                          <td>11-20</td>
+                          <td>10</td>
+                        </tr>
+                        <tr>
+                          <td>21-30</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <td>31-40</td>
+                          <td>30</td>
+                        </tr>
+                        <tr>
+                          <td>41-50</td>
+                          <td>25</td>
+                        </tr>
+                      </table><br>
+                    
+                      <p>Calcula la asimetría, la curtosis y el coeficiente de asimetría de Pearson para las calificaciones.</p>
+                    
+                      <h5>Ejercicio 5</h5>
+                    
+                      <h6>Datos</h6>
+                    
+                      <table border="1">
+                        <tr>
+                          <th>Peso (kg)</th>
+                          <th>Frecuencia</th>
+                        </tr>
+                        <tr>
+                          <td>40-50</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <td>51-60</td>
+                          <td>30</td>
+                        </tr>
+                        <tr>
+                          <td>61-70</td>
+                          <td>40</td>
+                        </tr>
+                        <tr>
+                          <td>71-80</td>
+                          <td>25</td>
+                        </tr>
+                        <tr>
+                          <td>81-90</td>
+                          <td>15</td>
+                        </tr>
+                      </table><br>
+                    
+                      <p>Calcula la asimetría, la curtosis y el coeficiente de asimetría de Pearson para el peso de las personas.</p>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2><strong>Formulario de Fórmulas</strong></h2>
+        <ol>
+          <form>
+            <h5>Asimetría (A)</h5>
+            <p>A = Σ(x - X̅)³ / n * s³</p>
+        
+            <h5>Curtosis (C)</h5>
+            <p>C = Σ(x - X̅)⁴ / n * s⁴</p>
+        
+            <h5>Coeficiente de asimetría de Pearson (K)</h5>
+            <p>K = (3 * (X̅ - Me)) / s</p>
+          </form>
+        
+          <h5>Leyenda</h5>
+          <ul>
+            <li>Σ: Sumatoria</li>
+            <li>x: Valor individual de la variable</li>
+            <li>X̅: Media</li>
+            <li>n: Número de datos</li>
+            <li>s: Desviación estándar</li>
+            <li>Me: Mediana</li>
+          </ul>
+    </section>
+</body>
+</html>

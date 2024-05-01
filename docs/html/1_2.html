@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leyes de exponentes y radicales</title>
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styleprimersemestre.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- CNDJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #c7d7fa;
+    /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,#fbd320, #c7f883,#73fc33);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fbd320, #c7f883,#73fc33);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center> <h1>Leyes de exponentes y radicales</h1></center>
+    </header>
+    <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>Las leyes de exponentes y radicales son reglas matemáticas que nos permiten simplificar y operar con expresiones que contienen potencias y raíces. Estas leyes son fundamentales para el estudio del álgebra y otras áreas de las matemáticas.</p>
+    </section>
+    <section id="explicacion">
+        <h2>Explicación Detallada</h2>
+
+        <h3>Leyes de exponentes:</h3>
+        <ul>
+            <li><strong>Producto de potencias con la misma base:</strong> \(a^m \times a^n = a^{m+n}\)</li>
+            <li><strong>Cociente de potencias con la misma base:</strong> \(a^m / a^n = a^{m-n}\)</li>
+            <li><strong>Potencia de una potencia:</strong> \((a^m)^n = a^{mn}\)</li>
+            <li><strong>Potencia de un producto:</strong> \((ab)^m = a^m \times b^m\)</li>
+            <li><strong>Potencia de un cociente:</strong> \((\frac{a}{b})^m = \frac{a^m}{b^m}\)</li>
+        </ul>
+        
+        <h3>Leyes de radicales:</h3>
+        <ul>
+            <li><strong>Raíz cuadrada de un producto:</strong> \(\sqrt{ab} = \sqrt{a} \times \sqrt{b}\)</li>
+            <li><strong>Raíz cuadrada de un cociente:</strong> \(\sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}}\)</li>
+            <li><strong>Potencia de una raíz:</strong> \((\sqrt{a})^n = \sqrt{a^n}\)</li>
+        </ul>
+    </section>
+    <section id="videos">
+        <h2>Videos Explicativos</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Simplificación de radicales | Ejemplo 1</h5>
+                    <p class="card-text">Simplificación de expresiones radicales, primer ejemplo.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/j00Por1Ct6c?si=lCCp65iVMfEoRiso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Reducir radicales a minimo comun indice</h5>
+                    <p class="card-text">Breve explicación del proceso que se debe realizar para convertir radicales de distinto indice en radicales que tengan el mismo indice, dentro del curso de Raíz | Radicales.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/FXQapwnod7A?si=D8LCIUIJlqMZ6ImY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Potencia con exponente fracción</h5>
+                    <p class="card-text">Explicación con ejemplos de el proceso a seguir cuando encontramos una número con exponente fraccionario, y los demás pasos a realizar, dentro de los cursos de Potenciación y Raíz radicales.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/IqW4-JUrd3k?si=r5CrrBL_GPag1pYX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Fracciones con exponente fraccionario</h5>
+                    <p class="card-text">Explicación con ejemplos de el proceso a seguir cuando encontramos una fracción con exponente fraccionario, y los demás pasos a realizar, dentro de los cursos de Potenciación y Raíz radicales.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/WH04Pj_qLCo?si=Mnl7GzjvcunYtPLl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Reducir radicales semejantes</h5>
+                    <p class="card-text">Breve explicación del proceso para reducir radicales del mismo grado que tienen la misma cantidad subradical, dentro del curso de Raíz Radicales.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/6cJwOq1gfBo?si=Vt3dR2YphmUsnALy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Suma y resta de radicales</h5>
+                    <p class="card-text">Breve explicación de la regla para sumar y restar expresiones con radicales, simplificando hasta encontrar radicales semejantes, dentro del curso de Raíz Radicales.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/2BVgn1wk5ko?si=aZu4xTIWKrsbZFRm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ejercicios">
+        <h2>Ejercicios</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                        <li>Ejercicio 1: Simplifica la expresión \(2^3 \times 2^2\).</li>
+                        <ul>Solución: \(2^3 \times 2^2 = 2^{3+2} = 2^5\)</ul>
+                        
+                        <li>Ejercicio 2: Calcula el valor de \(\sqrt{4 \times 9}\).</li>
+                        <ul>Solución: \(\sqrt{4 \times 9} = \sqrt{4} \times \sqrt{9} = 2 \times 3 = 6\)</ul>
+                    </ol>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                        <li>Ejercicio 1: Simplifica la expresión \((3^2)^3\).</li>
+                        <li>Ejercicio 2: Calcula el valor de \(\sqrt{\frac{16}{25}}\).</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2>A destacar</h2>
+        <h3>Leyes de exponentes:</h3>
+        <ul>
+            <li>\(a^m \times a^n = a^{m+n}\)</li>
+            <li>\(a^m / a^n = a^{m-n}\)</li>
+            <li>\((a^m)^n = a^{mn}\)</li>
+            <li>\((ab)^m = a^m \times b^m\)</li>
+            <li>\((\frac{a}{b})^m = \frac{a^m}{b^m}\)</li>
+        </ul>
+        <h3>Leyes de radicales:</h3>
+        <ul>
+            <li>\(\sqrt{ab} = \sqrt{a} \times \sqrt{b}\)</li>
+            <li>\(\sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}}\)</li>
+            <li>\((\sqrt{a})^n = \sqrt{a^n}\)</li>
+        </ul>
+    </section>
+</body>
+</html>

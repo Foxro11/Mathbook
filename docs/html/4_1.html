@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje y Expresiones Algebraicas</title>
+   
+
+     <!-- LINKS -->
+     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+     <!-- FUENTES -->
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styleprimersemestre.css">
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+     <!-- CNDJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+      <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #8cabff;
+    /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,   #00ff88, #9cccad,#a2a2a2);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,   #00ff88, #9cccad,#a2a2a2);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center> <h1>Tipos de numeros</h1></center>
+    </header>
+    <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>El cálculo diferencial es una rama de las matemáticas que se centra en el estudio del cambio. En este curso de cuarto semestre, nos enfocaremos en los tipos de números que son fundamentales para comprender y aplicar el cálculo diferencial. Estos tipos de números incluyen:</p>
+        <li><strong>Números reales: </strong> Son los números que usamos en la vida cotidiana, como \(1, 2.5, -3\), etc.</li>
+        <li><strong>Números racionales:</strong> Son los números que pueden expresarse como una fracción de dos números enteros, como \(1/2, 3/4, -5/7\), etc.</li>
+        <li><strong>Números irracionales: </strong>  Son los números que no pueden expresarse como una fracción de dos números enteros, como \(π, √2, e\), etc.</li>
+        <li><strong>Números complejos: </strong>  Son números que se forman sumando un número real y un número imaginario (un número real multiplicado por la unidad imaginaria i).</li>
+    </section>
+    <section id="explicacion">
+        <h2>Explicación Detallada</h2>
+        <h3>Números reales:</h3>
+        <p>Los números reales son la base del sistema numérico que usamos en la vida cotidiana. Se pueden representar en una línea recta, donde cada punto corresponde a un número real. Los números reales se pueden clasificar como positivos, negativos o cero.</p>
+        <h3>Números racionales:</h3>
+        <p>Los números racionales son un subconjunto de los números reales que se pueden expresar como una fracción de dos números enteros, donde el denominador no es cero. Los números racionales incluyen a los números enteros (como 1, 2, -3) y a las fracciones (como 1/2, 3/4, -5/7).</p>
+        <h3>Números irracionales:</h3>
+        <p>Los números irracionales son un subconjunto de los números reales que no se pueden expresar como una fracción de dos números enteros. Algunos ejemplos de números irracionales son π (la razón entre la circunferencia y el diámetro de un círculo), √2 (la raíz cuadrada de 2) y e (la base del logaritmo natural).</p>
+        <h3>Números complejos:</h3>
+        <p>Los números complejos son números que se forman sumando un número real y un número imaginario (un número real multiplicado por la unidad imaginaria i). Se pueden representar como puntos en un plano complejo, donde el eje horizontal representa la parte real y el eje vertical representa la parte imaginaria.</p>
+    </section>
+    <section id="videos">
+        <h2>Videos Explicativos</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Clasificación de números: Naturales, Enteros, Racionales, Irracionales, Reales, Complejos</h5>
+                    <p class="card-text">En este video veremos cómo se clasifican los conjuntos de números, desde los naturales, enteros, racionales, irracionales, reales y complejos. Y veremos ejemplos de cada conjunto, además de la motivación que llevó a la humanidad a crear los nuevos conjuntos numéricos</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/rtNC7g1h_JA?si=IIC6RWg2Y-aurPQ6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">TIPOS DE NÚMEROS. CLASIFICACIÓN. Matemáticas Básicas</h5>
+                    <p class="card-text">Explicación de los tipos de números que hay en matemáticas, usando ejemplos.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/8K8sHLEhj14?si=Vrw9KQimRXZRTyry" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">¿Qué son realmente los NÚMEROS REALES?</h5>
+                    <p class="card-text">Representados con la letra “R”, los números reales son todos aquellos que pertenecen a la recta numérica. ¿Y esto qué significa? ¡Te lo cuento en este vídeo! Vamos a intentar definirlos “realmente”. </p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/xOjQ3u7jSLQ?si=q8gSICFUMGGDnkr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">CLASIFICACIÓN DE LOS NÚMEROS (NATURALES, ENTEROS, RACIONALES, IRRACIONALES, REALES y COMPLEJOS)</h5>
+                    <p class="card-text">Explicación completa, detallada y fácil de entender de la clasificación de los números (números naturales, enteros, racionales, irracionales, reales y complejos).</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/G-yn4gjjn60?si=pNVAVnYhgLF1pbdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">CLASIFICACIÓN DE LOS NÚMEROS | CON EJEMPLOS</h5>
+                    <p class="card-text">EN ESTE VÍDEO VEREMOS LA CLASIFICACIÓN DE LOS NÚMEROS DE MANERA FÁCIL Y SENCILLA CON EJEMPLOS DE LA VIDA COTIDIANA.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/qGBSKNeSR4A?si=JJZEJybK4pH9CGcl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Qué son los NÚMEROS ENTEROS y para qué sirven.</h5>
+                    <p class="card-text">Aprendé qué son los números enteros, para qué sirven y algunos conceptos básicos para comprender mejor el tema con los profesores Adrián y Cristina</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/5HE66809NYI?si=5K0ojY33NpVWvn3H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ejercicios">
+        <h2>Ejercicios</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                       <li>Determina si el número \(5√2\) es racional o irracional.</li>
+                       <ul>Solución: El número \(5√2\) no es racional porque no se puede expresar como una fracción de dos números enteros.</ul>
+                       <li>Simplifica la expresión \((3 + 2i) + (5 - i)\).</li>
+                       <ul>Solución: La expresión simplificada es \(8 + i\).</ul>
+                       <li>Encuentra la ecuación de la recta que pasa por los puntos \((2, 3) y (4, 5)\).</li>
+                       <ul>Solución: La ecuación de la recta es \(y = x + 1\).</ul>
+                    </ol>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                        <li>Determina si el número \(3/7\) es racional o irracional.</li>
+                        <li>Simplifica la expresión \((2 - 3i) - (4 + 2i)\).</li>
+                        <li>Encuentra la pendiente de la recta que pasa por los puntos \((1, 2) y (3, 4)\).</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2>Formulario de Fórmulas</h2>
+        <ol>
+            <li>Fórmula de la distancia entre dos puntos:</li>
+            <ul>\(d = √((x₂ - x₁)² + (y₂ - y₁)²)\)</ul>
+            <li>Fórmula de la pendiente de una recta:</li>
+            <ul>\(m = (y₂ - y₁) / (x₂ - x₁)\)</ul>
+            <li>Ecuación de la recta que pasa por dos puntos:</li>
+            <ul>\(y - y₁ = m(x - x₁)\)</ul>
+        </ol>
+    </section>
+</body>
+</html>

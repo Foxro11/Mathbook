@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje y Expresiones Algebraicas</title>
+   
+
+     <!-- LINKS -->
+     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+     <!-- FUENTES -->
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styleprimersemestre.css">
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+     <!-- CNDJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+      <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #d2f8ff;
+    /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,  #ffbb00, #b8007a,#ff9100);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,   #dab201, #dd00b8,#eea215);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center> <strong><h1>Medidas de Tendencia Central</h1></strong></center>
+    </header>
+    <section id="introduccion">
+        <h2><strong>Introducción</strong></h2>
+        <p>Las medidas de tendencia central son herramientas estadísticas que nos permiten resumir un conjunto de datos con un solo valor numérico que representa el "centro" de la distribución. Son útiles para comprender la distribución de la información, comparar diferentes conjuntos de datos y realizar análisis estadísticos.</p>       
+    </section>
+    <section id="explicacion">
+        <h3><strong>Tipos de Medidas de Tendencia Central:</strong></h3>
+        <ul>
+            <li>Media: Es la suma de todos los valores dividida por el número total de datos. Se utiliza para variables cuantitativas.</li>
+            <li>Mediana: Es el valor que divide al conjunto de datos en dos mitades iguales. Se utiliza para variables cuantitativas.</li>
+            <li>Moda: Es el valor que más se repite en el conjunto de datos. Se utiliza para variables tanto cuantitativas como cualitativas.</li><br>
+        </ul>
+        <h3><strong>Utilidad de las Medidas de Tendencia Central:</strong></h3>
+        <ul>
+            <li>Media: Es la medida más utilizada y la más sensible a valores extremos. Se recomienda usarla cuando la distribución de los datos es normal o simétrica.</li>
+            <li>Mediana: Es una medida más robusta que la media y no es tan sensible a valores extremos. Se recomienda usarla cuando la distribución de los datos es asimétrica o no se conoce la forma de la distribución.</li>
+            <li>Moda: Es una medida útil para identificar el valor más común en un conjunto de datos. Se recomienda usarla junto con otras medidas de tendencia central para obtener una mejor comprensión de la distribución de la información.</li><br>
+        </ul>
+        <h3><strong>Limitaciones de las Medidas de Tendencia Central:</strong></h3>
+        <ul>
+            <li>No son sensibles a la forma de la distribución: La media y la mediana no toman en cuenta la forma de la distribución de los datos.</li>
+            <li>No son sensibles a la dispersión de los datos: Las medidas de tendencia central no nos dan información sobre la dispersión de los datos alrededor del centro.</li>
+            <li>No son suficientes para describir un conjunto de datos: Para tener una mejor comprensión de la distribución de la información, es necesario utilizar otras medidas estadísticas junto con las medidas de tendencia central.</li>
+        </ul> 
+    </section>
+    <section id="videos">
+        <h2><strong>Videos Explicativos</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Media, Mediana y Moda</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/0DA7Wtz1ddg?si=BMEh171guj8wKSCV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Media, Mediana y Moda, Datos Agrupados Puntualmente</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/leotQ32xZQ0?si=r19fDD-fYDEY1VCZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Media, Mediana y Moda, Datos Agrupados en Intervalos, Ejemplo 1</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/oH3hTV53TdU?si=Ab8l4qWb58h4wq1K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Media, Mediana y Moda, Datos Agrupados en Intervalos, Ejemplo 2</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/G3IXLgozzag?si=YDRxi1gkFiGtuLKi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Media, Mediana y Moda, Datos Agrupados en Intervalos, Ejemplo 3</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/kek-jrOSuHU?si=I8Zw4T7IWZashYne" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Media Mediana y Moda, Datos sin Agrupar</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/fOuRqk1nzgY?si=bD6SD5mI6WjCXE0d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ejercicios">
+        <h2><strong>Ejercicios</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                      <h5>Ejercicio 1: Datos Individuales</h5>
+
+                      <p>Calcula la media, la mediana y la moda del siguiente conjunto de datos:</p>
+                      <p>10, 12, 14, 15, 16, 18, 19, 20, 22</p>
+                    
+                      <p>Solución:</p>
+                    
+                      <ul>
+                        <li>Media: 16.22</li>
+                        <li>Mediana: 16</li>
+                        <li>Moda: No hay moda (ningún valor se repite)</li><br>
+                      </ul>
+                    
+                      <h5>Ejercicio 2: Datos con Repeticiones</h5>
+                    
+                      <p>Calcula la media, la mediana y la moda del siguiente conjunto de datos:</p>
+                      <p>5, 5, 7, 8, 10, 10, 12, 12, 15</p>
+                    
+                      <p>Solución:</p>
+                    
+                      <ul>
+                        <li>Media: 9.78</li>
+                        <li>Mediana: 10</li>
+                        <li>Moda: 5 y 10 (ambos se repiten dos veces)</li><br>
+                      </ul>
+                    
+                      <h5>Ejercicio 3: Datos Agrupados en Frecuencias</h5>
+                    
+                      <p>En una encuesta a 50 personas sobre su altura, se obtuvieron los siguientes resultados:</p>
+                    
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Altura (cm)</th>
+                            <th>Frecuencia</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>150-155</td>
+                            <td>5</td>
+                          </tr>
+                          <tr>
+                            <td>156-160</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <td>161-165</td>
+                            <td>15</td>
+                          </tr>
+                          <tr>
+                            <td>166-170</td>
+                            <td>20</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    
+                      <p>Solución:</p>
+                    
+                      <ul>
+                        <li>Media: 162.2 cm</li>
+                        <li>Mediana: 162.5 cm (22.5 percentil de la frecuencia acumulada)</li>
+                        <li>Moda: No hay moda (ningún intervalo tiene la mayor frecuencia)</li><br>
+                      </ul>
+                    
+                      <p>Explicación:</p>
+                      
+                      <p>Para calcular la media en datos agrupados, se utiliza la marca de clase de cada intervalo multiplicada por su frecuencia y luego se suma el total y se divide por la frecuencia total.</p>
+                      
+                      <p>Para calcular la mediana en datos agrupados, se utiliza la frecuencia acumulada y se ubica el percentil que corresponde a la mediana (en este caso, el 50% de la frecuencia total).</p>
+                    
+</ol>
+</div>
+</div>
+                        
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                      <h5>Instrucciones</h5>
+  <p>Resuelve los siguientes ejercicios sobre Medidas de Tendencia Central. <br>
+    Puedes utilizar herramientas como calculadoras o software estadístico para realizar los cálculos.</p>
+
+  <h5>Ejercicio 1: Datos Individuales</h5>
+
+  <p>Calcula la media, la mediana y la moda del siguiente conjunto de datos:</p>
+  <p>2, 5, 7, 8, 9, 10, 12, 13, 15</p>
+
+                      <h5>Ejercicio 2: Datos Agrupados en Frecuencias</h5>
+                    
+                      <p>En una encuesta a 100 estudiantes sobre su edad, se obtuvieron los siguientes resultados:</p>
+                    
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Edad</th>
+                            <th>Frecuencia</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>15-17</td>
+                            <td>15</td>
+                          </tr>
+                          <tr>
+                            <td>18-20</td>
+                            <td>30</td>
+                          </tr>
+                          <tr>
+                            <td>21-23</td>
+                            <td>25</td>
+                          </tr>
+                          <tr>
+                            <td>24-26</td>
+                            <td>30</td>
+                          </tr>
+                        </tbody>
+                      </table><br>
+                    
+                      <p>Calcula la media, la mediana y la moda de la edad de los estudiantes encuestados.</p>
+                    
+                       
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2><strong>Formulario de Fórmulas</strong></h2>
+        <ol>
+          <h5>Media</h5>
+
+          Datos no agrupados:
+          <p>Media = Σx / n</p>
+        
+          Datos agrupados:
+          <p>Media = Σ(fi * mi) / n</p>
+        
+          <h5>Mediana</h5>
+        
+          Datos no agrupados:
+        
+            <li>Ordenar datos (menor a mayor)</li>
+            <li>Mediana = valor central (n impar)</li>
+            <li>Mediana = (valor central 1 + valor central 2) / 2 (n par)</li>
+          
+        
+          Datos agrupados:
+          <p>Mediana = Li + (h/2) * [(N/2) - Fi-1] / fi</p>
+        
+          <h5>Moda</h5>
+        
+          Datos no agrupados:
+          <p>Moda = valor más repetido</p>
+        
+          Datos agrupados:
+          <p>Moda = clase con mayor frecuencia absoluta</p>
+        
+          <h5>Leyendas</h5>
+        
+          <ul>
+            <li>Σx: Suma de todos los valores</li>
+            <li>n: Número de datos</li>
+            <li>fi: Frecuencia absoluta de cada clase</li>
+            <li>mi: Marca de clase (xi + h/2)</li>
+            <li>h: Amplitud de la clase</li>
+            <li>Li: Límite inferior de la clase mediana</li>
+            <li>N: Número total de datos</li>
+            <li>Fi-1: Frecuencia acumulada anterior a la clase mediana</li>
+          </ul>
+        
+  </ul>
+    </section>
+</body>
+</html>

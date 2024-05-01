@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje y Expresiones Algebraicas</title>
+   
+
+     <!-- LINKS -->
+     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+     <!-- FUENTES -->
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styleprimersemestre.css">
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+     <!-- CNDJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+      <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #d2f8ff;
+    /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,  #ffbb00, #b8007a,#ff9100);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,   #dab201, #dd00b8,#eea215);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center> <strong><h1>Medidas de Dispersión</h1></strong></center>
+    </header>
+    <section id="introduccion">
+        <h2><strong>Introducción</strong></h2>
+        <p>Las medidas de dispersión, también conocidas como medidas de variabilidad, son herramientas estadísticas que nos permiten cuantificar qué tan dispersos o concentrados están los datos alrededor de la medida de tendencia central. En otras palabras, nos ayudan a comprender qué tan homogéneo o heterogéneo es un conjunto de datos.</p>
+    </section>
+    <section id="explicacion">
+        <h3><strong>Tipos de Medidas de Dispersión:</strong></h3>
+        <ul>
+            <h4>Medidas Absolutas:</h4>
+
+            <p>Expresan la dispersión en las mismas unidades que los datos originales.<br>
+               Las medidas absolutas más comunes son:</p>
+              
+            <li>Rango: Diferencia entre el valor máximo y el valor mínimo del conjunto de datos.</li>
+            <li>Desviación media: Promedio de las distancias entre cada valor y la media.</li>
+            <li>Varianza: Promedio del cuadrado de las distancias entre cada valor y la media.</li><br>
+
+            <h4>Medidas Relativas:</h4>
+
+            <p>Expresan la dispersión en unidades porcentuales.<br>
+              La medida relativa más común es:</p>
+
+            <li>Coeficiente de variación: Razón entre la desviación media y la media, expresada como un porcentaje.</li><br>
+        </ul>
+        <h3><strong>Elección de la Medida de Dispersión Adecuada:</strong></h3>
+        <ul>
+            <li>Tipo de datos: Algunas medidas de dispersión solo son válidas para datos numéricos.</li>
+            <li>Escala de medición: Las medidas absolutas dependen de la escala de medición, mientras que las medidas relativas no.</li>
+            <li>Objetivo del análisis: Diferentes objetivos pueden requerir diferentes medidas de dispersión.</li><br>
+        </ul>
+        <h3><strong>Elementos de una Distribución de Frecuencia:</strong></h3>
+        <ul>
+            <li>Amplitud: Diferencia entre el límite superior e inferior de la clase.</li>
+            <li>Frecuencia: Número de datos que se encuentran en cada clase.</li>
+            <li>Frecuencia relativa: Razón entre la frecuencia de una clase y el número total de datos.</li>
+            <li>Frecuencia acumulada: Suma de las frecuencias de todas las clases hasta una clase determinada.</li>
+            <li>Marca de clase: Punto medio de cada clase.</li>
+        </ul> 
+    </section>
+    <section id="videos">
+        <h2><strong>Videos Explicativos</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Medidas de Dispersión o Variabilidad, Introducción</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/Efg6G8vlVUA?si=mVpMWQuVloatQ5S1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Rango, Amplitud o Recorrido, Ejercicios Resueltos</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/q5bWSTIaV0g?si=anhiKctnDEX8vZVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Varianza y Desviación Estándar, Introducción y Ejercicio 1</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/VTTqr5cAzvw?si=-E05537NepmOp_4_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Varianza y Desviación Estándar, Ejercicio 2</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/QFeQycZNn3Q?si=oAgTSKzFlIjEfPWH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Varianza y Desviación Estándar, Ejercicio 3 (con más datos)</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/VV4OgoJoISA?si=KHqcwEtCXFn1NzYS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Varianza y Desviación Estándar, Fórmulas Rápidas</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/xMHrME0r5HE?si=WseLgVV8LnZOwkqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ejercicios">
+        <h2><strong>Ejercicios</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+
+                     <p>Las siguientes secciones presentan ejercicios resueltos para practicar el cálculo e interpretación de medidas de dispersión (Rango, Desviación Media, Varianza y Coeficiente de Variación).</p>
+                    
+                      <h5>Ejercicio 1: Datos Individuales</h5>
+                    
+                      <p>Calcular el Rango, la Desviación Media, la Varianza y el Coeficiente de Variación para el siguiente conjunto de datos:</p>
+                      <p>{2, 4, 6, 8, 10}</p>
+                    
+                      <h3>Solución</h3>
+                    
+                      <ul>
+                        <li>Rango: Rango = Valor máximo - Valor mínimo = 10 - 2 = 8</li>
+                        <li>Desviación Media:
+                          <ul>
+                            <li>Media = (2 + 4 + 6 + 8 + 10) / 5 = 6</li>
+                            <li>Desviación Media = (|2 - 6| + |4 - 6| + |6 - 6| + |8 - 6| + |10 - 6|) / 5 = 4</li>
+                          </ul>
+                        </li>
+                        <li>Varianza: Varianza = (2^2 + 4^2 + 6^2 + 8^2 + 10^2) / 5 - 6^2 = 8</li>
+                        <li>Coeficiente de Variación: Coeficiente de Variación = (Desviación Media / Media) * 100% = (4 / 6) * 100% = 66.67%</li>
+                      </ul><br>
+                    
+                      <h5>Ejercicio 2: Datos Agrupados en Frecuencias</h5>
+
+                      <p>Los siguientes datos representan las edades de un grupo de 10 estudiantes:</p>
+                      <p>{18, 19, 20, 21, 22, 23, 24, 25, 26, 27}</p>
+                      <p>Calcular la Amplitud, la Frecuencia Absoluta, la Frecuencia Relativa y la Frecuencia Acumulada de los datos agrupados en intervalos de clase de 3 años.</p>
+                    
+                      <h3>Solución</h3>
+                    
+                      <p>Amplitud: Amplitud = Valor máximo - Valor mínimo = 27 - 18 = 9</p><br>
+                    
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Intervalo de clase</th>
+                            <th>Frecuencia absoluta</th>
+                            <th>Frecuencia relativa</th>
+                            <th>Frecuencia acumulada</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>18-20</td>
+                            <td>2</td>
+                            <td>0.2</td>
+                            <td>2</td>
+                          </tr>
+                          <tr>
+                            <td>21-23</td>
+                            <td>4</td>
+                            <td>0.4</td>
+                            <td>6</td>
+                          </tr>
+                          <tr>
+                            <td>24-26</td>
+                            <td>3</td>
+                            <td>0.3</td>
+                            <td>9</td>
+                          </tr>
+                          <tr>
+                            <td>27-29</td>
+                            <td>1</td>
+                            <td>0.1</td>
+                            <td>10</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    
+</ol>
+</div>
+</div>
+                        
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                        
+                      <p>Los siguientes ejercicios te ayudarán a practicar el cálculo e interpretación de medidas de dispersión (Rango, Desviación Media, Varianza y Coeficiente de Variación).</p>
+
+                      <h5>1. Datos Individuales</h5>
+                    
+                      <h6>Problema a</h6>
+                    
+                      <p>Calcular el rango, la desviación media, la varianza y el coeficiente de variación para el siguiente conjunto de datos:</p>
+                      <p>{12, 15, 18, 21, 24}</p>
+                    
+                      <h6>Problema b</h6>
+                    
+                      <p>Interpretar los resultados obtenidos en el contexto del problema (define un contexto para el problema).</p>
+                    
+                      <h5>2. Datos Agrupados en Frecuencias</h5>
+                    
+                      <h6>Problema a</h6>
+                    
+                      <p>Los siguientes datos representan las calificaciones de un examen de matemáticas de 30 estudiantes:</p>
+                    
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Calificación</th>
+                            <th>Frecuencia</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>0-5</td>
+                            <td>2</td>
+                          </tr>
+                          <tr>
+                            <td>6-10</td>
+                            <td>5</td>
+                          </tr>
+                          <tr>
+                            <td>11-15</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <td>16-20</td>
+                            <td>8</td>
+                          </tr>
+                          <tr>
+                            <td>21-25</td>
+                            <td>5</td>
+                          </tr>
+                        </tbody>
+                      </table><br>
+                    
+                      <p>Calcular la amplitud, la frecuencia absoluta, la frecuencia relativa y la frecuencia acumulada de los datos.</p>
+                      <h6>Problema b</h6>
+
+                      <p>¿Qué porcentaje de estudiantes obtuvieron una calificación superior a 15?</p>
+                    
+                      <h5>3. Aplicación a la vida real</h5>
+                    
+                      <h6>Problema a</h6>
+                    
+                      <p>Una empresa de telefonía móvil registra el consumo mensual de datos de sus clientes. Se recopilan los datos de una muestra aleatoria de 100 clientes, obteniendo una media de 3 GB y una desviación media de 1 GB.</p>
+                    
+                      <ul>
+                        <li>Interpretar los resultados en el contexto del problema.</li>
+                        <li>¿Qué porcentaje de clientes consume menos de 2 GB de datos al mes?</li>
+                      </ul><br>
+                    
+                      <h6>Problema b</h6>
+                    
+                      <p>Un profesor de física desea comparar la dispersión de las calificaciones de dos exámenes. El primer examen tiene una media de 70 puntos y una desviación media de 10 puntos, mientras que el segundo examen tiene una media de 80 puntos y una desviación media de 15 puntos.</p>
+                    
+                      <ul>
+                        <li>¿Qué examen tiene una mayor dispersión en las calificaciones?</li>
+                        <li>¿Qué información adicional se necesitaría para determinar cuál examen es más difícil?</li>
+                      </ul>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2><strong>Formulario de Fórmulas</strong></h2>
+        <ol>
+          <h2>Datos Individuales</h2>
+
+          <ul>
+            <li>Rango: R = X<sub>max</sub> - X<sub>min</sub></li>
+            <li>Desviación Media: DM = Σ|X - X̅| / n</li>
+            <li>Varianza: V = Σ(X - X̅)² / n</li>
+            <li>Coeficiente de Variación: CV = (DM / X̅) * 100%</li>
+          </ul>
+        
+          <h2>Datos Agrupados en Frecuencias</h2>
+        
+          <ul>
+            <li>Amplitud: A = X<sub>max</sub> - X<sub>min</sub></li>
+            <li>Frecuencia Absoluta: FA = # de datos en cada intervalo</li>
+            <li>Frecuencia Relativa: FR = FA / Total de datos</li>
+            <li>Frecuencia Acumulada: FAC = FA + Frecuencia acumulada del intervalo anterior</li>
+          </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuaciones lineales</title>
+
+     <!-- LINKS -->
+     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+     <!-- FUENTES -->
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styleprimersemestre.css">
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+     <!-- CNDJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+      <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #c7d7fa;
+      /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,#fbd320, #c7f883,#73fc33);
+      /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fbd320, #c7f883,#73fc33);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center><h1>Ecuaciones lineales</h1></center>
+    </header>
+    <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>Una ecuación lineal es una ecuación de primer grado, es decir, una ecuación que tiene la forma \(ax + b = c\), donde \(a\), \(b\) y \(c\) son números reales y \(a\) no es igual a 0. La variable \(x\) es la incógnita que queremos determinar.</p>
+    </section>
+    <section id="explicacion">
+        <h2>Explicación Detallada</h2>
+
+        <h3>Partes de una ecuación lineal:</h3>
+        <ul>
+            <li><strong>Coeficiente:</strong> El número que acompaña a la variable.</li>
+            <li><strong>Término independiente:</strong> El número que no tiene variable.</li>
+            <li><strong>Solución:</strong> El valor de la variable que hace que la ecuación sea verdadera.</li>
+        </ul>
+
+        <h3>Métodos para resolver ecuaciones lineales:</h3>
+        <ul>
+            <li><strong>Método de despeje:</strong> Se despeja la variable en la ecuación y se opera para obtener su valor.</li>
+            <li><strong>Método de balanceo:</strong> Se suman o restan cantidades iguales a ambos lados de la ecuación para obtener la variable sola.</li>
+            <li><strong>Método gráfico:</strong> Se representa la ecuación en una gráfica y se busca el punto de intersección con el eje \(x\).</li>
+        </ul>
+    </section>
+    <section id="videos">
+        <h2>Videos Explicativos</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Solución de ecuaciones | Resolver una ecuación | Introducción</h5>
+                    <p class="card-text">Introducción al concepto de solución de ecuaciones en donde explicaré qué es una ecuación y qué es resolver una ecuación, dentro del curso de Solución de ecuaciones.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/FrJ-tBTpxzo?si=6p93ZUp1HQBAVQ9v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Qué es despejar una ecuación y Cómo se despeja | Para principiantes</h5>
+                    <p class="card-text">Explicación detallada de qué es despejar una ecuación y uno de los métodos de despeje de ecuaciones usado para resolver ecuaciones de primer grado aplicando las propiedades de la igualdades.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/792dSUkHhgg?si=-iBL6tZ_e-nDe_md" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Solución de ecuaciones de primer grado - lineales | Ejemplo 1</h5>
+                    <p class="card-text">Varios ejemplos de solución de ecuaciones de primer grado, también llamado: resolver una ecuación lineal, explicación paso a paso de la forma de resolver una ecuación de primer grado utilizando las propiedades de las igualdades. Ejemplo 1.<p>
+                        <iframe width="245" height="147" src="https://www.youtube.com/embed/H2Uz1UpqByg?si=LBJtQkk0Q1wnH7cc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Solución de ecuaciones de primer grado - lineales | Ejemplo 2</h5>
+                    <p class="card-text">Varios ejemplos de solución de ecuaciones de primer grado, también llamado: resolver una ecuación lineal, explicación paso a paso de una de las formas de resolver una ecuación de primer grado utilizando el despeje de ecuaciones. Ejemplo 2.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/QLkNQWgYfEU?si=J3tfSRznwz008wiX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Cómo solucionar una ecuación entera de primer grado | Ejemplo 2</h5>
+                    <p class="card-text">Breve explicación  con diferentes ejemplos de cómo resolver o solucionar una ecuación entera de primer grado con una incógnita, dentro del curso de solución de ecuaciones.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/By6jw2IbSF0?si=oyxLSNaPWd8f9q3r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Solucionar ecuaciones lineales | Ejemplo 3</h5>
+                    <p class="card-text">Explicación de cómo solucionar una ecuación (despejar la \(x\)) de primer grado con una incógnita, cuando la ecuación  contiene paréntesis, dentro del curso de solución de ecuaciones.<p>
+                        <iframe width="245" height="147" src="https://www.youtube.com/embed/qaDV-0I1lek?si=BIw7QK6NHjavJQYR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ejercicios">
+        <h2>Ejercicios</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                        <li>Ejercicio 1: Resuelve la ecuación \(2x + 5 = 11\).</li>
+                        <ul>Solución: \(2x + 5 = 11\)</ul>
+                        <ul>\(2x = 6\)</ul>
+                        <ul>\(x = 3\)</ul>
+                        
+                        <li>Ejercicio 2: Resuelve la ecuación \(3x - 2 = 4\).</li>
+                        <ul>Solución: \(3x - 2 = 4\)</ul>
+                        <ul>\(3x = 6\)</ul>
+                        <ul>\(x = 2\)</ul>
+                    </ol>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                        <li>Ejercicio 1: Una tienda vende un producto por $10. Si Ana compra 3 productos, ¿cuánto debe pagar?</li>
+                        <li>Ejercicio 2: Un tren viaja a una velocidad de 80 km/h. Si recorre 240 km, ¿cuánto tiempo ha tardado?</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2>A destacar</h2>
+        <ul>
+            <li>Ecuación lineal: \(ax + b = c\)</li>
+            <li>Solución: \(x = \frac{{c - b}}{a}\)</li>
+        </ul>
+    </section>
+</body>
+</html>

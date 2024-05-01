@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje y Expresiones Algebraicas</title>
+   
+
+     <!-- LINKS -->
+     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+     <!-- FUENTES -->
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styleprimersemestre.css">
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+     <!-- CNDJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+      <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #d2f8ff;
+    /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,  #ffbb00, #b8007a,#ff9100);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,   #dab201, #dd00b8,#eea215);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center> <strong><h1>Probabilidad</h1></strong></center>
+    </header>
+    <section id="introduccion">
+        <h2><strong>Introducción</strong></h2>
+        <p>La probabilidad es un método por el cual se obtiene la
+          frecuencia de un acontecimiento determinado mediante
+          la realización de un experimento aleatorio, del que se conocen todos los resultados posibles, bajo condiciones suficientemente estables.
+          La teoría de la probabilidad se usa extensamente en áreas
+          como la estadística, la física, la matemática, las ciencias y
+          la filosofía para sacar conclusiones sobre la probabilidad
+          discreta de sucesos potenciales y la mecánica subyacente
+          discreta de sistemas complejos, por lo tanto es la rama
+          de las matemáticas que estudia, mide o determina a los
+          experimentos o fenómenos aleatorios</p>
+    </section>
+    <section id="explicacion">
+        <h3><strong>Tipos de Probabilidad:</strong></h3>
+        <ul>
+            <li>Clásica: Se aplica cuando todos los resultados del experimento son equiprobables.</li>
+            <li>Frecuentista: Se basa en la frecuencia de un evento en una serie de experimentos.</li>
+            <li>Condicional: Es la probabilidad de que un evento ocurra dado que otro ya ha ocurrido.</li>
+            <li>Marginal: Es la probabilidad de que un evento ocurra sin importar la ocurrencia de otros eventos.</li>
+            <li>Subjetiva: Se basa en la creencia personal sobre la probabilidad de un evento.</li><br>
+        </ul>
+        <h3><strong>Reglas de la Probabilidad:</strong></h3>
+        <ul>
+            <li>La suma de las probabilidades de todos los eventos del espacio muestral es 1.</li>
+            <li>La probabilidad de la unión de dos eventos es la suma de las probabilidades de cada evento menos la probabilidad de la intersección de ambos eventos.</li>
+            <li>La probabilidad de la intersección de dos eventos es el producto de las probabilidades de cada evento.</li><br>
+        </ul>
+        <h3><strong>Aplicaciones de la Probabilidad:</strong></h3>
+        <ul>
+            <li>Estadística: Para analizar datos y sacar conclusiones.</li>
+            <li>Finanzas: Para evaluar riesgos y tomar decisiones de inversión.</li>
+            <li>Juegos de azar: Para calcular las probabilidades de ganar.</li>
+            <li>Meteorología: Para predecir el clima.</li>
+            <li>Medicina: Para diagnosticar enfermedades y determinar el riesgo de desarrollarlas.</li>
+        
+        </ul> 
+    </section>
+    <section id="videos">
+        <h2><strong>Videos Explicativos</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Experimento Aleatorio, Espacio Muestral, Evento o Suceso</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/tQh29_Noo9w?si=ulqj_ef2Dys4Z2Zr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Probabilidad de un Evento Simple, Ejemplo 1</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/xYco67hkECs?si=DC-QoeR8EuY8VjHD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Probabilidad de un Evento Simple, Ejemplo 2</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/ceLx-7Fne4Q?si=rWaDE6XaiBqCQGvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Probabilidad de un Evento Simple con un Dado, Ejemplo 3</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/6BlaRMzvh_E?si=2dkJWvyRPIjKKdHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Probabilidad de un Evento Simple con DOS DADOS, Ejemplo 4</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/6BM1CPvfQXA?si=Lp5oneTX6ZSATLwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Probabilidad Eventos Simples CARTAS, Ejemplo 5</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/rzGtbwZ3vec?si=k53YIFm4vE68va_9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ejercicios">
+        <h2><strong>Ejercicios</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                      <li>Lanzamiento de dos monedas</li>
+                      <p>
+                        Espacio muestral: {cara, cruz}, {cara, cara}, {cruz, cara}, {cruz, cruz}
+                      </p>
+                      <p>
+                        Evento: {cara, cara}
+                      </p>
+                      <p>
+                        Probabilidad: 1 / 4 = 0.25
+                      </p>
+
+                      <li>Extracción de dos bolas rojas</li>
+  <p>
+    Espacio muestral: 30 pares de bolas diferentes
+  </p>
+  <p>
+    Evento: {(roja, roja)}
+  </p>
+  <p>
+    Probabilidad: 3 / 30 = 0.1
+  </p>
+
+  <li>Lanzamiento de un dado tres veces</li>
+  <p>
+    Espacio muestral: 216 resultados posibles
+  </p>
+  <p>
+    Evento: {(5, 5, 5), (5, 5, 6), (5, 6, 5), (5, 6, 6), (6, 5, 5), (6, 5, 6), (6, 6, 5), (6, 6, 6)}
+  </p>
+  <p>
+    Probabilidad: 8 / 216 = 1/27
+  </p>
+    
+</ol>
+</div>
+</div>
+                        
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                        
+                      <li>Extracción de dos bolas con reposición</li>
+  <p>
+    Espacio muestral: 2 * 2 = 4 resultados posibles
+  </p>
+  <p>
+    Evento: {(rojo, rojo)}
+  </p>
+  <p>
+    Probabilidad: ?
+  </p>
+
+                      <li>Lanzamiento de dos dados</li>
+  <p>
+    Espacio muestral: 6 * 6 = 36 resultados posibles
+  </p>
+  <p>
+    Evento: {(6, 1), (6, 2), (5, 1), (5, 2)}
+  </p>
+  <p>
+    Probabilidad: ?
+  </p>
+
+  <li>Lanzamiento de una moneda y extracción de una bola</li>
+  <p>
+    Espacio muestral (moneda): {cara, cruz}
+  </p>
+  <p>
+    Espacio muestral (bola): 4 + 2 + 1 = 7 bolas
+  </p>
+  <p>
+    Evento: {(cara, azul)}
+  </p>
+  <p>
+    Probabilidad: ?
+  </p>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2><strong>Formulario de Fórmulas</strong></h2>
+        <ol>
+          <h5>Probabilidad Básica</h5>
+          <p>
+            Espacio muestral (Ω): Es el conjunto de todos los resultados posibles de un experimento. <br>
+            Evento (A): Es un subconjunto del espacio muestral. <br>
+            Probabilidad de un evento (P(A)): Es la medida de la posibilidad de que ocurra el evento. Se calcula como la razón entre el número de casos favorables al evento (n(A)) y el número de casos posibles (tamaño del espacio muestral n(Ω)).
+          </p>
+          <p>
+            Fórmula:
+            <br>
+            P(A) = n(A) / n(Ω)
+          </p>
+        
+          <h5>Propiedades de la Probabilidad</h5>
+          <ul>
+            <li>0 ≤ P(A) ≤ 1 (La probabilidad de un evento está entre 0 y 1)</li>
+            <li>P(Ω) = 1 (La probabilidad del espacio muestral es 1)</li>
+            <li>P(A ∪ B) = P(A) + P(B) - P(A ∩ B) (Probabilidad de la unión de eventos)</li>
+          </ul><br>
+        
+          <h5>Sucesos Independientes</h5>
+          <p>
+            Dos eventos son independientes si la probabilidad de uno no afecta la probabilidad del otro.
+          </p>
+          <p>
+            Fórmula:
+            <br>
+            P(A ∩ B) = P(A) * P(B) (Probabilidad de la intersección de eventos independientes)
+          </p>
+        
+          <h5>Sucesos Condicionados</h5>
+          <p>
+            La probabilidad condicionada de un evento A dado B es la probabilidad de que A ocurra si ya sabemos que B ha ocurrido.
+          </p>
+          <p>
+            Fórmula:
+            <br>
+            P(A|B) = P(A ∩ B) / P(B) (Probabilidad condicionada)
+          </p>
+        
+          <h5>Teorema de Bayes</h5>
+          <p>
+            Permite calcular la probabilidad de un evento A dado B, conociendo las probabilidades de A y B, y las probabilidades de otros eventos que son incompatibles con B.
+          </p>
+          <p>
+            Fórmula:
+            <br>
+            P(A|B) = P(B|A) * P(A) / P(B)
+          </p>
+        
+          <h4>Fórmulas para Distribuciones de Probabilidad</h4>
+        
+          <h5>Distribución Binomial</h5>
+          <p>
+            Se utiliza para modelar experimentos con un número fijo de ensayos independientes, donde cada ensayo tiene solo dos resultados posibles (éxito o fracaso).
+          </p>
+          <p>
+            Fórmula:
+            <br>
+            P(X = k) = nCk * p^k * (1-p)^(n-k)
+          </p>
+          <p>
+            Donde:
+            <br>
+             n: Número de ensayos.
+            <br>
+             k: Número de éxitos.
+            <br>
+             p: Probabilidad de éxito en cada ensayo.
+          </p>
+        
+          <h5>Distribución Normal</h5>
+          <p>
+            Se utiliza para modelar variables continuas que se distribuyen en forma de campana.
+          </p>
+          <p>
+            Fórmula:
+            <br>
+            f(x) = (1 / √(2πσ^2)) * exp(-(x-μ)^2 / (2σ^2))
+          </p>
+          <p>
+            Donde:
+            <br>
+             μ: Media de la distribución.
+            <br>
+             σ^2: Varianza de la distribución.
+          </p>
+        
+          <h5>Leyes de De Morgan</h5>
+          <p>
+            Permiten calcular la probabilidad del complemento de eventos (lo opuesto a un evento).
+          </p>
+        
+          <h5>Complementario de la unión</h5>
+          <p>
+            Fórmula:
+            <br>
+            P(A ∪ B) = 1 - P(A') - P
+    </section>
+</body>
+</html>

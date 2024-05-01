@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje y Expresiones Algebraicas</title>
+   
+
+     <!-- LINKS -->
+     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+     <!-- FUENTES -->
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styleprimersemestre.css">
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+     <!-- CNDJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+      <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #d2f8ff;
+    /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,  #e2da00, #ffa827,#ff0000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,   #e2da00, #ffa827,#ff0000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center> <h1>Plano cartesiano</h1></center>
+    </header>
+    <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>El plano cartesiano, también conocido como sistema de coordenadas cartesianas, es una herramienta matemática fundamental para ubicar puntos en un plano. Fue desarrollado por el matemático francés René Descartes en el siglo XVII y lleva su nombre en su honor.</p>
+    </section>
+    <section id="explicacion">
+        <h2>Explicación Detallada</h2>
+        <h3>Elementos del plano cartesiano:</h3>
+        <ul>
+            <li><strong>Ejes:</strong> Dos rectas perpendiculares que se intersectan en un punto llamado origen.</li>
+            <li><strong>Origen:</strong> El punto de intersección de los ejes, donde la coordenada x y la coordenada y son 0.</li>
+            <li><strong>Cuadrantes:</strong>  Las cuatro áreas creadas por la intersección de los ejes.</li>
+            <li><strong>Coordenadas:</strong> Un par ordenado de números que indica la ubicación de un punto en el plano. La primera coordenada (x) indica la distancia horizontal al origen y la segunda coordenada (y) indica la distancia vertical al origen.</li>
+        </ul>
+        <h3>Cómo ubicar un punto en el plano cartesiano:</h3>
+        <ol>
+            <li>Identifica el origen.</li>
+            <li>Mueve la coordenada x a la derecha del origen si es positiva o a la izquierda si es negativa.</li>
+            <li>Mueve la coordenada y hacia arriba del origen si es positiva o hacia abajo si es negativa.</li>
+            <li>Traza una línea desde el origen hasta el punto donde se intersectan las distancias x e y.</li>
+        </ol>
+    </section>
+    <section id="videos">
+        <h2>Videos Explicativos</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Plano cartesiano introducción | Cómo dibujar el plano</h5>
+                    <p class="card-text">Breve explicación de que es el plano cartesiano y cómo dibujarlo de manera correcta, dentro del curso de Plano Cartesiano.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/ftGVWXo1Khc?si=N1brx4YmFcXfo60h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Como ubicar puntos en el Plano Cartesiano</h5>
+                    <p class="card-text">Breve explicación de cómo ubicar puntos en el Plano Cartesiano, dentro del curso de Plano Cartesiano.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/QTrE4x5DPZ8?si=RvkIFclzO9b-yHEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Como ubicar puntos en el plano cartesiano con FRACCIONES</h5>
+                    <p class="card-text">Explicación de la forma de ubicar puntos en el plano cartesiano con fracciones, varios ejemplos primero sin fracciones y luego con una coordenada con fracciones o las dos coordenadas con fracción, dentro del curso del Plano Cartesiano.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/M-KzreZqXO0?si=z1ObfNgm9BU7qUiF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Traslacion en el plano cartesiano</h5>
+                    <p class="card-text">Breve explicación de cómo realizar la traslación de una figura geométrica en el Plano Cartesiano conociendo los puntos (vértices) que la componen, dentro del curso de Plano Cartesiano.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/C3Ydl25rESg?si=dkrWIVo7tXTvXtju" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Reflexión en el plano cartesiano</h5>
+                    <p class="card-text">Breve explicación de cómo realizar la reflexión de una figura geométrica en el Plano Cartesiano conociendo los puntos (vértices) que la componen, dentro del curso de Plano Cartesiano.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/hHGmnFM-GCk?si=DGC9iGR4x_xicu4i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Homotecia | Cómo trazarla</h5>
+                    <p class="card-text">Breve explicación de qué es una homotecia y la forma de trazarla, dentro del curso de plano cartesiano.</p>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/zrPuBP1qJk4?si=09u1ROerb-IYWIil" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ejercicios">
+        <h2>Ejercicios</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                        <li>Ubica los siguientes puntos en el plano cartesiano:</li>
+                        <ul>
+                            <li>\(3, 2\): Se encuentra 3 unidades a la derecha del origen y 2 unidades por encima del origen.</li>
+                            <li>\(-2, -4\): Se encuentra 2 unidades a la izquierda del origen y 4 unidades por debajo del origen.</li>
+                            <li>\(0, 5\): Se encuentra sobre el eje Y, 5 unidades por encima del origen.</li>
+                        </ul>
+                        <li>Determina las coordenadas de los siguientes puntos:</li>
+                        <ul>
+                            <li>A: Se encuentra 4 unidades a la derecha del origen y 3 unidades por encima del origen. Coordenadas: \(4, 3\)</li>
+                            <li>B: Se encuentra 2 unidades a la izquierda del origen y 5 unidades por debajo del origen. Coordenadas: \(-2, -5\)</li>
+                        </ul>
+                        <li>Encuentra la distancia entre los puntos \A (2, 3\) y \B (4, 5\).</li>
+                        <ul>\(d = √((4 - 2)² + (5 - 3)²)\)</ul>
+                        <ul>\(d = √(4 + 4)\)</ul>
+                        <ul>\(d = √8\)</ul>
+                        <ul>\(d = 2√2\)</ul>
+                        \(La distancia entre los puntos A y B es 2√2 unidades.\)
+                    </ol>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                        <li>Ubica los siguientes puntos en el plano cartesiano:</li>
+                        <ul>
+                            <li>\(-3, 4\)</li>
+                            <li>\(5, -1\)</li>
+                            <li>\(0, -3\)</li>
+                        </ul>
+                        <li>Determina las coordenadas de los siguientes puntos:</li>
+                        <ul>
+                            <li>C: Se encuentra 3 unidades a la izquierda del origen y 2 unidades por debajo del origen.</li>
+                            <li>D: Se encuentra 5 unidades a la derecha del origen y 4 unidades por encima del origen.</li>
+                        </ul>
+                        <li>Encuentra la distancia entre los puntos C y D.</li>
+                        <li>Grafica la siguiente ecuación en el plano cartesiano:</li>
+                        <ul>\(y = 2x + 1\)</ul>
+                        <li>Determina la pendiente de la recta que pasa por los puntos \(A (2, 3)\) y \(B (4, 5)\).</li>
+                        <li>Encuentra el punto medio del segmento de recta que une los puntos \(A (2, 3)\) y \(B (4, 5)\).</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2>Formulario de Fórmulas</h2>
+        <ol>
+            <li>Distancia entre dos puntos:</li>
+            <ul>\(d = √((x₂ - x₁)² + (y₂ - y₁)²)\)</ul>
+            <li>Pendiente de una recta:</li>
+            <ul>\(m = (y₂ - y₁) / (x₂ - x₁)\)</ul>
+            <li>Ecuación de una recta:</li>
+            <ul>\(y = mx + b\)</ul>
+            <li>Punto medio de un segmento de recta:</li>
+            <ul>\(((x₁ + x₂) / 2, (y₁ + y₂) / 2)\)</ul>
+        </ol>
+    </section>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje y Expresiones Algebraicas</title>
+   
+
+     <!-- LINKS -->
+     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+     <!-- FUENTES -->
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styleprimersemestre.css">
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+     <!-- CNDJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+      <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #d2f8ff;
+    /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,  #4781ff, #8f2eff,#45daff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,   #00ffff, #cb8cff,#157aee);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center> <h1>Teorema de Pitágoras</h1></center>
+    </header>
+    <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>El teorema de Pitágoras es una de las proposiciones matemáticas más famosas y relevantes en la geometría euclidiana. Se trata de una relación fundamental que existe entre los tres lados de un triángulo rectángulo, y su enunciado es el siguiente:<br>
+        En un triángulo rectángulo, el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los catetos.</p>
+    </section>
+    <section id="explicacion">
+        <h3>Conceptos:</h3>
+        <ul>
+            <li>Triángulo rectángulo: Un triángulo rectángulo es un triángulo que tiene un ángulo recto, es decir, un ángulo de 90 grados. Los dos lados que forman el ángulo recto se llaman catetos, y el lado opuesto al ángulo recto se llama hipotenusa.</li>
+            <li>Catetos: Los catetos son los dos lados que forman el ángulo recto en un triángulo rectángulo.</li>
+            <li>Hipotenusa: La hipotenusa es el lado opuesto al ángulo recto en un triángulo rectángulo. Es el lado más largo del triángulo.</li>
+            <li>Cuadrado: Un cuadrado es un polígono regular de cuatro lados con todos sus ángulos rectos y todos sus lados iguales.</li>
+            <li>Suma de cuadrados: La suma de cuadrados es la operación matemática que consiste en sumar los cuadrados de dos o más números.</li><br>
+        </ul>
+        <h3>Utilidad del Teorema de Pitágoras:</h3>
+        <ul>
+            <li>Geometría: Permite calcular la longitud de un lado de un triángulo rectángulo si se conocen las longitudes de los otros dos lados.</li>
+            <li>Trigonometría: Se utiliza para calcular las razones trigonométricas (seno, coseno y tangente) de los ángulos de un triángulo rectángulo.</li>
+            <li>Física: Se aplica en problemas de mecánica, como calcular la fuerza resultante de dos fuerzas perpendiculares.</li>
+            <li>Ingeniería: Se utiliza en el diseño y construcción de estructuras, como edificios y puentes.</li><br>
+        </ul>
+        <h3>Demostraciones del Teorema de Pitágoras:</h3>
+        <ul>
+            <li>Demostración por áreas: Esta demostración se basa en la comparación de las áreas de los cuadrados construidos sobre los lados del triángulo rectángulo.</li>
+            <li>Demostración por semejanza: Esta demostración utiliza la propiedad de que los triángulos rectángulos homotéticos tienen sus lados proporcionales.</li>
+            <li>Demostración por trigonometría: Esta demostración utiliza las razones trigonométricas para calcular la longitud de la hipotenusa.</li>
+        </ul> 
+    </section>
+    <section id="videos">
+        <h2>Videos Explicativos</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Teorema de Pitágoras, Introducción</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/XfVWlO3sRw0?si=DNMwK2E43Wz0Hy_t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Teorema de Pitágoras, Encontrar la Hipotenusa</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/2UbdPiqAiHY?si=QsVoDtg7iYm8py0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Teorema de Pitágoras, Encontrar un Cateto</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/CJ8bpjhwA2k?si=_wkoJqxKTCn-BTM5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Teorema de Pitágoras, Ejercicio de Práctica</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/Ev4zMeZGwgU?si=R2ey0Q3R1TwQ4d8D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Teorema de Pitágoras, Area del Triángulo Equilátero Conocida su Altra</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/Vs1-YgEoz9o?si=qCd2BPOBm6CE6t__" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">¿Sabías Esto del Teorema de Pitágoras?</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/by2Mfjybn70?si=bWu_DhLSIgXFnRXZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ejercicios">
+        <h2>Ejercicios</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                        <h5>Ejercicio 1</h5>
+    <p>Un triángulo rectángulo tiene un cateto de \(7 \, \text{cm}\) y la hipotenusa mide \(13 \, \text{cm}\). ¿Cuál es la longitud del otro cateto?</p>
+
+    <div class="solucion">
+        <h6>Solución:</h6>
+        <ol>
+            <li>Se dibuja un diagrama del triángulo rectángulo </li><br>
+            <svg width="200" height="150" viewBox="0 0 200 150">
+                <polygon points="0,0 120,0 70,120" fill="skyblue" stroke="black" stroke-width="2"/>
+                <text x="10" y="10">A</text>
+                <text x="120" y="10">B</text>
+                <text x="70" y="130">C</text>
+                <line x1="0" y1="0" x2="120" y2="0" stroke="black" stroke-width="2"/>
+                <line x1="120" y1="0" x2="70" y2="120" stroke="black" stroke-width="2"/>
+                <text x="55" y="70">7 cm</text>
+                <text x="30" y="15">13 cm</text>
+            </svg>
+            <li>Se etiquetan los catetos como \(a\) y \(b\), y la hipotenusa como \(c\). Se asignan los valores conocidos: \(a = 7 \, \text{cm}\) y \(c = 13 \, \text{cm}\).</li>
+            <li>Se utiliza la ecuación del teorema de Pitágoras: \(c^2 = a^2 + b^2\).</li>
+            <li>Se despeja \(b\): \(b^2 = c^2 - a^2\).</li>
+            <li>Se sustituyen los valores: \(b^2 = 13^2 - 7^2 = 95\).</li>
+            <li>Se calcula la raíz cuadrada para obtener \(b\): \(b = \sqrt{95} \approx 9.75 \, \text{cm}\).</li>
+        </ol>
+        <p><b>Respuesta:</b> El otro cateto del triángulo mide aproximadamente \(9.75 \, \text{cm}\).</p>
+    </div>
+
+    <h5>Ejercicio 2</h5>
+    <p>La hipotenusa de un triángulo rectángulo mide \(25 \, \text{cm}\) y un cateto mide \(15 \, \text{cm}\). ¿Cuál es la longitud del otro cateto?</p>
+
+    <div class="solucion">
+        <h6>Solución:</h6>
+        <ol>
+            <li>Se dibuja un diagrama del triángulo rectángulo</li><br>
+            <svg width="250" height="200" viewBox="0 0 250 200">
+                <polygon points="0,0 200,0 125,160" fill="skyblue" stroke="black" stroke-width="2"/>
+                <text x="10" y="10">A</text>
+                <text x="200" y="10">B</text>
+                <text x="125" y="170">C</text>
+                <line x1="0" y1="0" x2="200" y2="0" stroke="black" stroke-width="2"/>
+                <line x1="200" y1="0" x2="125" y2="160" stroke="black" stroke-width="2"/>
+                <text x="110" y="80">15 cm</text>
+                <text x="40" y="15">25 cm</text>
+            </svg>
+            <li>Se etiquetan los catetos como \(a\) y \(b\), y la hipotenusa como \(c\). Se asignan los valores conocidos: \(c = 25 \, \text{cm}\) y \(a = 15 \, \text{cm}\).</li>
+            <li>Se utiliza la ecuación del teorema de Pitágoras: \(c^2 = a^2 + b^2\).</li>
+            <li>Se despeja \(b\): \(b^2 = c^2 - a^2\).</li>
+            <li>Se sustituyen los valores: \(b^2 = 25^2 - 15^2 = 400\).</li>
+            <li>Se calcula la raíz cuadrada para obtener \(b\): \(b = \sqrt{400} = 20 \, \text{cm}\).</li>
+        </ol>
+        <p><b>Respuesta:</b> El otro cateto del triángulo mide \(20 \, \text{cm}\).</p>
+    </div>
+
+    <h5>Ejercicio 3</h5>
+    <p>Un triángulo rectángulo tiene un cateto de \(5 \, \text{cm}\) y el otro cateto es el triple de largo. ¿Cuál es la longitud de la hipotenusa?</p>
+
+    <div class="solucion">
+        <h6>Solución:</h6>
+        <ol>
+            <li>Se dibuja un diagrama del triángulo rectángulo</li>
+            <svg width="250" height="200" viewBox="0 0 250 200">
+                <polygon points="0,0 200,0 100,150" fill="skyblue" stroke="black" stroke-width="2"/>
+                <text x="10" y="10">A</text>
+                <text x="200" y="10">B</text>
+                <text x="100" y="160">C</text>
+                <line x1="0" y1="0" x2="200" y2="0" stroke="black" stroke-width="2"/>
+                <line x1="200" y1="0" x2="100" y2="150" stroke="black" stroke-width="2"/>
+                <text x="105" y="75">5 cm</text>
+                <text x="40" y="10"></text>
+            </svg>
+            <li>Se etiquetan los catetos como \(a\) y \(b\), y la hipotenusa como \(c\). Se asigna el valor conocido: \(a = 5 \, \text{cm}\).</li>
+            <li>Se establece la relación entre los catetos: \(b = 3a = 15 \, \text{cm}\).</li>
+            <li>Se utiliza la ecuación del teorema de Pitágoras: \(c^2 = a^2 + b^2\).</li>
+            <li>Se sustituyen los valores: \(c^2 = 5^2 + 15^2 = 250\).</li>
+            <li>Se calcula la raíz cuadrada para obtener \(c\): \(c = \sqrt{250} \approx 15.81 \, \text{cm}\).</li>
+        </ol>
+        <p><b>Respuesta:</b> La longitud de la hipotenusa es de aproximadamente \(15.81 \, \text{cm}\).</p>
+    </div>
+</ol>
+</div>
+</div>
+                        
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                        
+                        <li>Ejercicio: Escalera y pared</li><br>
+                        <p>Una escalera de \(5 \, \text{metros}\) de largo se apoya contra una pared vertical. La base de la escalera está a \(3 \, \text{metros}\) de la pared. ¿Qué altura alcanza la escalera sobre la pared?</p>
+                    
+                        <li>Ejercicio: Cateto y ángulo de \(30\) grados</li><br>
+                        <p>Un triángulo rectángulo tiene un cateto de \(6 \, \text{cm}\) y el ángulo opuesto a este cateto mide \(30\) grados. ¿Cuál es la longitud de la hipotenusa?</p>
+                    
+                        <li>Ejercicio: Cateto y ángulo de \(60\) grados</li><br>
+                        <p>Un triángulo rectángulo tiene un cateto de \(4 \, \text{cm}\) y el ángulo opuesto a este cateto mide \(60\) grados. ¿Cuál es la longitud de la hipotenusa?</p>
+                    
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formulario">
+        <h2>A destacar</h2>
+        <ol>
+            <h5>Triángulo Rectángulo</h5>
+            <ul>
+                <li><b>Hipotenusa:</b> \( c = \sqrt{a^2 + b^2} \)</li>
+                <li><b>Cateto adyacente:</b> \( a = \sqrt{c^2 - b^2} \)</li>
+                <li><b>Cateto opuesto:</b> \( b = \sqrt{c^2 - a^2} \)</li>
+            </ul>
+    
+            <h5>Triángulo Rectángulo (ángulos de 30° y 60°)</h5>
+            <ul>
+                <li><b>Hipotenusa (cateto adyacente conocido):</b> \( c = 2a \)</li>
+                <li><b>Hipotenusa (cateto opuesto conocido):</b> \( c = \sqrt{3}a \)</li>
+                <li><b>Cateto adyacente:</b> \( a = \frac{c}{2} \)</li>
+                <li><b>Cateto opuesto:</b> \( a = \frac{c\sqrt{3}}{2} \)</li>
+            </ul>
+    
+            <h5>Triángulo Rectángulo (ángulos de 45° y 45°)</h5>
+            <ul>
+                <li><b>Hipotenusa (cateto conocido):</b> \( c = \sqrt{2}a \)</li>
+                <li><b>Cateto adyacente:</b> \( a = \frac{c}{\sqrt{2}} \)</li>
+                <li><b>Cateto opuesto:</b> \( a = \frac{c}{\sqrt{2}} \)</li>
+            </ul>
+        </ol>
+    </section>
+    
+</body>
+</html>

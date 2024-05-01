@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje y Expresiones Algebraicas</title>
+   
+
+     <!-- LINKS -->
+     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+     <!-- FUENTES -->
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styleprimersemestre.css">
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+     <!-- CNDJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+      <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #d2f8ff;
+    /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,  #a7ff02, #ff2eee,#f36eff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,   #fc80f5, #9dff00,#ee15dc);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center> <strong><h1>Integración por Partes</h1></strong></center>
+    </header>
+    <section id="introduccion">
+        <h2><strong>Introducción</strong></h2>
+        <p>La integración por partes es una técnica fundamental en el cálculo integral que permite encontrar la integral de un producto de dos funciones. Se basa en la regla del producto para la diferenciación y es una herramienta poderosa para resolver integrales que no se pueden resolver mediante técnicas básicas.</p>
+    </section>
+    <section id="explicacion">
+        <h3><strong>Conceptos:</strong></h3>
+        <ul>
+            <li>Integración: Es el proceso de encontrar la función original a partir de su derivada.</li>
+            <li>Integración por partes: Es una técnica para encontrar la integral de un producto de dos funciones.</li>
+            <li>Regla del producto: Es una regla de diferenciación que establece que la derivada del producto de dos funciones es igual a la primera función por la derivada de la segunda más la segunda función por la derivada de la primera.</li><br>
+        </ul>
+        <h3><strong>Utilidad de las Integración por Partes:</strong></h3>
+        <ul>
+            <li>La integración por partes se utiliza para resolver integrales que no se pueden resolver mediante las técnicas básicas de integración.</li>
+            <li>Es una herramienta poderosa que se puede utilizar para resolver una amplia gama de integrales.</li>
+            <li>Se utiliza en diversas áreas de la matemática, la física y la ingeniería.</li><br>
+        </ul>
+        <h3><strong>Pasos Claves de la Integración por Partes:</strong></h3>
+        <ul>
+            <li>Identificar las funciones u y v: El producto uv es la función que queremos integrar.</li>
+            <li>Elegir u: Es recomendable elegir u como la función que tiene una derivada más simple que v.</li>
+            <li>Calcular du y v: Calcular la derivada de u y la integral de v.</li>
+            <li>Aplicar la fórmula: Sustituir u, v, du y v en la fórmula de la integración por partes.</li>
+            <li>Resolver la integral: La integral original se reduce a dos integrales más simples. Resolver estas integrales para obtener la integral final.</li>
+        </ul> 
+    </section>
+    <section id="videos">
+        <h2><strong>Videos Explicativos</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integración por Partes, Introducción</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/93kW5colCAU?si=DBk4pWaYHoUpy8wL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integración por Partes, Ejemplo 1</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/6nu-snYlA0Q?si=AO5qc4X6-tGSLj_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integración por Partes, Ejemplo 2</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/hvYDrt_Aq2U?si=rTbD2S4lkUFOAxYT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integración por Partes, Ejemplo 3.1, Logaritmo Natural</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/dRhhOjCX4mE?si=xIsys4gHI6HrWwK1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integración por Partes, Ejemplo 3.2, Logaritmo Natural</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/qF4f1f2dCI8?si=ElPOSDFHTY35uhao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integración por Partes, Ejemplo 5</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/dsFHZQPoxWc?si=vTCz89wbxS93NUFu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ejercicios">
+        <h2><strong>Ejercicios</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                        <p>La integración por partes es una técnica para encontrar la integral de un producto de dos funciones. A continuación se presentan algunos ejemplos de ejercicios resueltos utilizando esta técnica.</p>
+
+  <li>Ejercicio: ∫ x * e^x dx</li>
+
+  <p>Solución:</p>
+  <ol>
+    <li>Identificamos las funciones u y v: u = x, v = e^x</li>
+    <li>Elegimos u: Elegimos u = x porque tiene una derivada más simple que v (du = dx).</li>
+    <li>Calculamos du y v: du = dx, v = e^x</li>
+    <li>Aplicamos la fórmula: ∫ uv dx = u ∫ v dx - ∫ u'v dx = x * e^x - ∫ e^x dx</li>
+    <li>Resolvemos la integral restante: ∫ e^x dx = e^x + C</li>
+    <li>Solución final: ∫ x * e^x dx = x * e^x - e^x + C</li><br>
+  </ol>
+
+  <li>Ejercicio: ∫ sin(x) * cos(x) dx</li>
+
+  <p>Solución:</p>
+  <ol>
+    <li>Identificamos las funciones u y v: u = sin(x), v = cos(x)</li>
+    <li>Elegimos u: Elegimos u = sin(x) porque tiene una derivada más simple que v (du = cos(x) dx).</li>
+    <li>Calculamos du y v: du = cos(x) dx, v = sin(x)</li>
+    <li>Aplicamos la fórmula: ∫ uv dx = u ∫ v dx - ∫ u'v dx = sin(x) * sin(x) - ∫ cos(x) * sin(x) dx</li>
+    <li>Resolvemos la integral restante: ∫ cos(x) * sin(x) dx = -sin^2(x) + C (usando nuevamente integración por partes)</li>
+    <li>Solución final: ∫ sin(x) * cos(x) dx = sin^2(x) - (-sin^2(x) + C) = 0 + C = C</li><br>
+  </ol>
+
+  <li>Ejercicio: ∫ ln(x) dx</li>
+
+  <p>Solución:</p>
+  <ol>
+    <li>Identificamos las funciones u y v: u = ln(x), v = 1</li>
+    <li>Elegimos u: Elegimos u = ln(x) porque tiene una derivada más simple que v (du = 1/x dx).</li>
+    <li>Calculamos du y v: du = 1/x dx, v = x</li>
+    <li>Aplicamos la fórmula: ∫ uv dx = u ∫ v dx - ∫ u'v dx = ln(x) * x - ∫ (1/x) * x dx</li>
+    <li>Resolvemos la integral restante: ∫ (1/x) * x dx = x + C</li>
+    <li>Solución final: ∫ ln(x) dx = ln(x) * x - x + C = x * ln(x) - x + C</li>
+  </ol>
+
+  <p>Estos son solo algunos ejemplos de integración por partes. Existen muchos otros tipos de integrales que se pueden resolver utilizando esta técnica.</p>
+
+   
+    
+</ol>
+</div>
+</div>
+                        
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                        
+                        <p>A continuación se presentan 10 ejercicios para practicar la técnica de integración por partes. Recuerda identificar las funciones u y v, elegir la más adecuada, calcular du y v, aplicar la fórmula y resolver las integrales restantes.</p>
+
+  <h5>Ejercicios</h5>
+
+  <ol>
+    <li>∫ x^2 * e^x dx</li>
+    <li>∫ sin(2x) * cos(x) dx (pista: usa una identidad trigonométrica para simplificar)</li>
+    <li>∫ ln(x^2) dx (pista: usa u = ln(x) y v = x)</li>
+    <li>∫ e^x * cos(x) dx</li>
+    <li>∫ x^3 * ln(x) dx</li>
+    <li>∫ arctan(x) dx (pista: esta integral no se puede resolver con integración por partes básica)</li>
+    <li>∫ sec^2(x) dx (pista: usa una identidad trigonométrica para simplificar)</li>
+    <li>∫ tan(x) * sec^2(x) dx</li>
+    <li>∫ e^(x^2) dx (pista: esta integral no se puede resolver con integración por partes básica)</li>
+    <li>∫ sin(x) / (1 + cos(x)) dx</li>
+  </ol>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2><strong>Formulario de Fórmulas</strong></h2>
+        <ol>
+            <h5>Fórmula básica</h5>
+
+  <p>∫ uv dx = u ∫ v dx - ∫ u'v dx</p>
+
+  <h5>Identidades útiles</h5>
+
+  <ul>
+    <li>d(ln(x)) = 1/x dx</li>
+    <li>d(sin(x)) = cos(x) dx</li>
+    <li>d(cos(x)) = -sin(x) dx</li>
+    <li>d(tan(x)) = sec^2(x) dx</li>
+    <li>d(sec(x)) = sec(x) tan(x) dx</li><br>
+  </ul>
+
+  <h5>Reglas de derivadas</h5>
+
+  <ul>
+    <li>Producto: (uv)' = u'v + uv'</li>
+    <li>Cociente: (u/v)' = (u'v - uv')/v^2</li>
+    <li>Función compuesta: (f(g(x)))' = f'(g(x)) * g'(x)</li>
+  </ul>
+    </section>
+</body>
+</html>
+
+

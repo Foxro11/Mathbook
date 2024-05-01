@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje y Expresiones Algebraicas</title>
+   
+
+     <!-- LINKS -->
+     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+     <!-- FUENTES -->
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styleprimersemestre.css">
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+     <!-- CNDJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+      <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #d2f8ff;
+    /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,  #a7ff02, #ff2eee,#f36eff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,   #fc80f5, #9dff00,#ee15dc);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center> <strong><h1>Integral Indefenida</h1></strong></center>
+    </header>
+    <section id="introduccion">
+        <h2><strong>Introducción</strong></h2>
+        <p>Las integrales indefinidas son una herramienta matemática fundamental para encontrar la antiderivada de una función.<br>
+           En términos simples, la integral indefinida de una función f(x) es una familia de funciones F(x) tal que F ′(x)=f(x).<br>
+           El proceso de encontrar la integral indefinida de una función se llama integración.</p>
+    </section>
+    <section id="explicacion">
+        <h3><strong>Conceptos:</strong></h3>
+        <ul>
+            <li>Función: La función a integrar, representada por f(x).</li>
+            <li>Antiderivada: Una función F(x) tal que F ′(x)=f(x).</li>
+            <li>Constante de integración: Una constante arbitraria que se añade al resultado de la integración.</li>
+            <li>Notación: La integral indefinida de f(x) se denota por ∫f(x)dx.</li><br>
+        </ul>
+        <h3><strong>Utilidad de las Integrales Indefinidas:</strong></h3>
+        <ul>
+            <li>Encontrar el área bajo una curva: La integral indefinida de f(x) entre a y b se puede usar para calcular el área bajo la curva de y=f(x) entre x=a y x=b.</li>
+            <li>Calcular el volumen de un sólido de revolución: La integral indefinida de f(x) se puede usar para calcular el volumen del sólido de revolución generado al girar la curva de y=f(x) alrededor del eje x.</li>
+            <li>Resolver ecuaciones diferenciales: Las integrales indefinidas se pueden usar para resolver ecuaciones diferenciales de primer orden.</li><br>
+        </ul>
+        <h3><strong>Metodos para Encontrar las Integrales Indefinidas:</strong></h3>
+        <ul>
+            <li>Integración por inspección: Se basa en reconocer la función a integrar como la derivada de una función conocida.</li>
+            <li>Integración por partes: Se utiliza para integrar el producto de dos funciones.</li>
+            <li>Integración por sustitución: Se utiliza para integrar una función compuesta.</li>
+            <li>Integración por fracciones parciales: Se utiliza para integrar funciones racionales.</li>
+        </ul> 
+    </section>
+    <section id="videos">
+        <h2><strong>Videos Explicativos</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integrales Indefinidas, Ejemplo 1</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/kbhBCPY02aA?si=jeTlARDwR35INp1n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integral Indefinidas, Paso a Paso</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/fkN13I-NaU8?si=CoFADKW3OJDbj0wQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integrales Indefinidas, Ejemplo 3</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/0Js6sMrCG-M?si=46W1HUjyxx-I7yMP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integral Indefinida, Método por Partes </h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/hPzBfdQa3rY?si=IzKogoNRFyINDdUw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Cálculo de Integral Indefinida, Método Sustitución</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/8lixSm1sjSw?si=Z7G5U1TKp5imrAod" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integrales Trigonométricas Indefinidas</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/XHdR8UVB6mg?si=8MxvbzlMTcLpUZly" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ejercicios">
+        <h2><strong>Ejercicios</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                        <li>Ejercicio: Integral de x^2</li>
+  <p>Función: f(x) = x^2</p>
+  <p>Solución: Integración por inspección</p>
+  <p>Resultado: ∫ x^2 dx = x^3/3 + C</p>
+
+  <li>Ejercicio: Integral de e^x</li>
+  <p>Función: f(x) = e^x</p>
+  <p>Solución: Integración por inspección</p>
+  <p>Resultado: ∫ e^x dx = e^x + C</p>
+
+  <li>Ejercicio: Integral de sin(x)</li>
+  <p>Función: f(x) = sin(x)</p>
+  <p>Solución: Integración por inspección</p>
+  <p>Resultado: ∫ sin(x) dx = -cos(x) + C</p>
+                            
+    </ul>
+    
+</ol>
+</div>
+</div>
+                        
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                        
+  <li>Ejercicio: Integral de x^3 - 2x^2 + 1</li>
+  <p>Función: f(x) = x^3 - 2x^2 + 1</p>
+  <p>Pregunta: ¿Cuál es la integral indefinida de f(x)?</p>
+
+  <li>Ejercicio: Integral de sin(x) + e^x</li>
+  <p>Función: f(x) = sin(x) + e^x</p>
+  <p>Pregunta: ¿Cuál es la integral indefinida de f(x)?</p>
+
+  <li>Ejercicio: Integral de 1/x</li>
+  <p>Función: f(x) = 1/x</p>
+  <p>Pregunta: ¿Cuál es la integral indefinida de f(x)?</p>
+
+  <li>Ejercicio: Integral de √x</li>
+  <p>Función: f(x) = √x</p>
+  <p>Pregunta: ¿Cuál es la integral indefinida de f(x)?</p>
+
+  <li>Ejercicio: Integral de ln(x)</li>
+  <p>Función: f(x) = ln(x)</p>
+  <p>Pregunta: ¿Cuál es la integral indefinida de f(x)?</p>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2><strong>Formulario de Fórmulas</strong></h2>
+        <ol>
+            <h5>Integrales indefinidas básicas</h5>
+  <ul>
+    <li>∫ x^n dx = x^(n+1)/(n+1) + C, donde n ≠ -1</li>
+    <li>∫ e^x dx = e^x + C</li>
+    <li>∫ sin(x) dx = -cos(x) + C</li>
+    <li>∫ cos(x) dx = sin(x) + C</li>
+  </ul>
+
+  <h5>Integrales de funciones especiales</h5>
+  <ul>
+    <li>∫ 1/x dx = ln|x| + C</li>
+    <li>∫ √x dx = 2/3 x^(3/2) + C</li>
+    <li>∫ ln(x) dx = x ln(x) - x + C</li>
+  </ul>
+
+  <h5>Integrales de funciones trigonométricas inversas</h5>
+  <ul>
+    <li>∫ sin^(-1)(x) dx = -x√(1-x^2) + C</li>
+    <li>∫ cos^(-1)(x) dx = x√(1-x^2) + C</li>
+    <li>∫ tan^(-1)(x) dx = 1/2 ln|1+x^2| + C</li>
+  </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje y Expresiones Algebraicas</title>
+   
+
+     <!-- LINKS -->
+     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+     <!-- FUENTES -->
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styleprimersemestre.css">
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+     <!-- CNDJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+      <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #d2f8ff;
+    /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,  #a7ff02, #ff2eee,#f36eff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,   #fc80f5, #9dff00,#ee15dc);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center> <strong><h1>Integración por Fracciones Parciales</h1></strong></center>
+    </header>
+    <section id="introduccion">
+        <h2><strong>Introducción</strong></h2>
+        <p>La integración por fracciones parciales es un método para descomponer una fracción racional en una suma de fracciones más simples. Esto permite integrar la fracción original más fácilmente, ya que las integrales de las fracciones simples son generalmente más fáciles de calcular.</p>
+    </section>
+    <section id="explicacion">
+        <h3><strong>Conceptos:</strong></h3>
+        <ul>
+            <li>Fracciones racionales: Son fracciones donde el numerador y el denominador son polinomios.</li>
+            <li>Grado de un polinomio: Es el mayor exponente de la variable en el polinomio.</li>
+            <li>Factorizar un polinomio: Escribir el polinomio como un producto de factores.</li>
+            <li>Raíz de un polinomio: Es el valor de la variable que hace que el polinomio sea igual a cero.</li>
+            <li>Descomposición en fracciones parciales: Escribir una fracción racional como una suma de fracciones más simples.</li><br>
+        </ul>
+        <h3><strong>Utilidad de las Integración por Fracciones Parciales:</strong></h3>
+        <ul>
+            <li>Permite integrar fracciones racionales que no se pueden integrar con las técnicas básicas.</li>
+            <li>Es útil para resolver integrales que aparecen en problemas de física, ingeniería y otras áreas.</li>
+            <li>Se puede usar para calcular áreas bajo curvas y volúmenes de sólidos de revolución.</li><br>
+        </ul>
+        <h3><strong>Pasos Claves de la Integración por Fracciones Parciales:</strong></h3>
+        <ul>
+            <li>Descomponer el denominador en factores: Factorizar el denominador de la fracción original en factores lineales.</li>
+            <li>Identificar el tipo de fracción: Dependiendo del tipo de factorización del denominador, se pueden usar diferentes casos para la descomposición.</li>
+            <li>Descomponer la fracción en fracciones parciales: Escribir la fracción original como una suma de fracciones de la forma indicada anteriormente.</li>
+            <li>Determinar las constantes: Calcular las constantes utilizando diferentes métodos como comparación de coeficientes, ecuaciones lineales o integración.</li>
+            <li>Integrar las fracciones parciales: Integrar cada una de las fracciones simples de la descomposición.</li>
+            <li>Sumar las integrales: Sumar las integrales de las fracciones simples para obtener la integral de la fracción original.</li>
+        </ul> 
+    </section>
+    <section id="videos">
+        <h2><strong>Videos Explicativos</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integración por Fracciones Parciales, Introducción</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/6pFmUh41jsQ?si=6yKquXsSmBJy-l0G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integración por Fracciones Parciales, Ejemplo 2, División</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/IhZfPrrua6A?si=22tDSdGBDqrknwce" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integración por Fracciones ParcialeS, Ejemplo 3, División</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/bYk6JI09MXY?si=wVlAr_ruhNEh8weO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integración por Fracciones ParcialeS, Ejemplo 4, Factores Lineales Diferentes</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/TvZuD7-cEjU?si=kViS-VU6LMm7HkNq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integración por Fracciones ParcialeS, Ejemplo 5, Factores Lineales Diferentes</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/zTT-tZvYeOE?si=nU3MfK0uP9H51r3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Integración por Fracciones ParcialeS, Ejemplo 6, Factores Lineales Diferentes</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/ofGxwE9X3xU?si=IW0qFvdoaZJVuxEV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ejercicios">
+        <h2><strong>Ejercicios</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                        <p>La integración por fracciones parciales es una técnica poderosa para integrar fracciones racionales. A continuación se presentan algunos ejemplos resueltos para ilustrar su aplicación.</p>
+
+  <h5>Ejemplo: Integrar 1 / (x^2 + 1)</h5>
+
+  <ol>
+    <li>Descomponer el denominador: x^2 + 1 = (x + i)(x - i)</li>
+    <li>Identificar el tipo de fracción: Denominador cuadrático irreducible.</li>
+    <li>Descomponer la fracción: A/(x + i) + B/(x - i)</li>
+    <li>Determinar las constantes: A = 1/2i, B = -1/2i</li>
+    <li>Integrar las fracciones: ∫ A/(x + i) dx + ∫ B/(x - i) dx = 1/2i ln(x + i) - 1/2i ln(x - i)</li>
+    <li>Solución final: ∫ 1 / (x^2 + 1) dx = 1/2i ln(x + i) - 1/2i ln(x - i) + C</li><br>
+  </ol>
+
+  <h5>Ejemplo 2: Integrar x / (x^2 - 1)</h5>
+
+  <ol>
+    <li>Descomponer el denominador: x^2 - 1 = (x + 1)(x - 1)</li>
+    <li>Identificar el tipo de fracción: Denominador lineal.</li>
+    <li>Descomponer la fracción: A/(x + 1) + B/(x - 1)</li>
+    <li>Determinar las constantes: A = 1/2, B = -1/2</li>
+    <li>Integrar las fracciones: ∫ A/(x + 1) dx + ∫ B/(x - 1) dx = 1/2 ln(x + 1) - 1/2 ln(x - 1)</li>
+    <li>Solución final: ∫ x / (x^2 - 1) dx = 1/2 ln(x + 1) - 1/2 ln(x - 1) + C</li><br>
+  </ol>
+
+  <h5>Ejemplo 3: Integrar e^x / (x^2 + 1)</h5>
+
+  <ol>
+    <li>Descomponer el denominador: x^2 + 1 = (x + i)(x - i)</li>
+    <li>Identificar el tipo de fracción: Denominador cuadrático irreducible.</li>
+    <li>Descomponer la fracción: A/(x + i) + B/(x - i)</li>
+    <li>Determinar las constantes: A = 1/2i(1 + i), B = -1/2i(1 - i)</li>
+    <li>Integrar las fracciones: ∫ A/(x + i) dx + ∫ B/(x - i) dx = 1/2i(1 + i) ln(x + i) - 1/2i(1 - i) ln(x - i)</li>
+    <li>Solución final: ∫ e^x / (x^2 + 1) dx = 1/2i(1 + i) ln(x + i) - 1/2i(1 - i) ln(x - i) + C</li><br>
+  </ol>
+
+  <p>Estos son solo algunos ejemplos. La integración por fracciones parciales se puede aplicar a una amplia variedad de fracciones racionales.</p>
+</ol>
+</div>
+</div>
+                        
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                        
+                        <p>A continuación se presentan 10 ejercicios para practicar la técnica de integración por fracciones parciales. Recuerda seguir estos pasos para resolver cada ejercicio:</p>
+
+                        <ol>
+                          <li>Identifica el tipo de fracción: Determina si la fracción es lineal, cuadrática irreducible, etc., analizando el grado y factorización del denominador.</li>
+                          <li>Descompón el denominador en factores: Factoriza el denominador de la fracción para identificar las raíces.</li>
+                          <li>Descompón la fracción en fracciones parciales: Basado en el tipo de fracción y la factorización del denominador, escribe la fracción original como una suma de fracciones más simples.</li>
+                          <li>Determina las constantes: Utiliza métodos como comparación de coeficientes, ecuaciones lineales o integración para encontrar los valores de las constantes en las fracciones parciales.</li>
+                          <li>Integra las fracciones parciales: Integra cada una de las fracciones simples obtenidas en el paso anterior.</li>
+                          <li>Suma las integrales: Suma las integrales de las fracciones parciales para obtener la integral final.</li><br>
+                        </ol>
+                      
+                        <h5>Ejercicios</h5>
+                      
+                        <ol start="1">
+                          <li>∫ 1 / (x^2 - 4)</li>
+                          <li>∫ x / (x^2 + 9)</li>
+                          <li>∫ e^x / (x^2 - 1)</li>
+                          <li>∫ (x^2 + 1) / (x^3 + 1)</li>
+                          <li>∫ ln(x) / (x^2 + 1)</li>
+                          <li>∫ arctan(x) / (1 + x^2)</li>
+                          <li>∫ sec(x) / (tan(x) + 1)</li>
+                          <li>∫ 1 / (x^2 + 2x + 1) (completar el cuadrado para factorizar)</li>
+                          <li>∫ x / (x^2 - 2x + 1) (completar el cuadrado para factorizar)</li>
+                          <li>∫ e^x / (x^2 - 4x + 3) (completar el cuadrado para factorizar)</li>
+                        </ol>
+                      
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2><strong>Formulario de Fórmulas</strong></h2>
+        <ol>
+            <h5>Descomposición de Fracciones</h5>
+
+  <ul>
+    <li>**Fracción lineal:** `A/(x - a)`</li>
+    <li>**Fracción cuadrática irreducible:** `(A/(x + b) + C/(x + b)^2)`
+  </ul>
+
+  <h5>Integración de Fracciones</h5>
+
+  <ul>
+    <li>**Fracción lineal:** `∫ A/(x - a) dx = A ln|x - a| + C`</li>
+    <li>**Fracción cuadrática irreducible:** `∫ (A/(x + b) + C/(x + b)^2) dx = A ln|x + b| - C/(x + b) + C`
+  </ul>
+    </section>
+</body>
+</html>

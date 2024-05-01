@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje y Expresiones Algebraicas</title>
+   
+
+     <!-- LINKS -->
+     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+     <!-- FUENTES -->
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styleprimersemestre.css">
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+     <!-- CNDJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+      <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #d2f8ff;
+    /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,  #4781ff, #8f2eff,#45daff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,   #00ffff, #cb8cff,#157aee);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center> <strong><h1>Razones Trigonométricas</h1></strong></center>
+    </header>
+    <section id="introduccion">
+        <h2><strong>Introducción</strong></h2>
+        <p>Las razones trigonométricas son relaciones matemáticas que se utilizan para estudiar las relaciones entre los lados y los ángulos de un triángulo rectángulo. Son herramientas fundamentales en trigonometría, una rama de las matemáticas que se ocupa de las relaciones entre los ángulos y los lados de los triángulos.</p>
+    </section>
+    <section id="explicacion">
+        <h3><strong>Las Razones Trigonométricas Básicas:</strong></h3>
+        <ul>
+            <li>Seno (sin): Se define como la razón entre el cateto opuesto al ángulo y la hipotenusa.</li>
+            <li>Coseno (cos): Se define como la razón entre el cateto adyacente al ángulo y la hipotenusa.</li>
+            <li>Tangente (tan): Se define como la razón entre el cateto opuesto al ángulo y el cateto adyacente al ángulo.</li><br>
+        </ul>
+        <h3><strong>Utilidad del las Razones Trigonométricas:</strong></h3>
+        <ul>
+            <li>Calcular longitudes de lados en triángulos: Si se conocen dos lados o un lado y un ángulo de un triángulo rectángulo, se pueden usar las razones trigonométricas para calcular la longitud del lado restante.</li>
+            <li>Calcular áreas y volúmenes de figuras geométricas: Las razones trigonométricas se pueden usar para calcular áreas y volúmenes de figuras geométricas como prismas, pirámides y esferas.</li>
+            <li>Resolver problemas de navegación: Las razones trigonométricas se utilizan para determinar la posición de un barco o avión en el mar o en el aire.</li>
+            <li>Medir distancias inaccesibles: Se pueden usar las razones trigonométricas para calcular la distancia a objetos que no se pueden alcanzar físicamente, como la altura de una montaña o la distancia a una estrella.</li>
+            <li>Modelar el movimiento de objetos: Las razones trigonométricas se utilizan para modelar el movimiento de objetos en proyectiles, como pelotas lanzadas al aire o naves espaciales en órbita.</li>
+            <li>Estudiar el movimiento ondulatorio: Las razones trigonométricas se utilizan para describir el comportamiento de las ondas, como las ondas sonoras o las ondas de luz.</li>
+            <li>Diseñar estructuras: Las razones trigonométricas se utilizan para calcular las fuerzas y momentos que actúan sobre estructuras como edificios y puentes.</li>
+            <li>Diseñar máquinas: Las razones trigonométricas se utilizan para diseñar mecanismos como engranajes y poleas.</li>
+            <li>Calcular la posición de los astros: Las razones trigonométricas se utilizan para calcular la posición de los planetas, estrellas y otros objetos celestes en el cielo.</li><br>
+        </ul>
+        <h3><strong>Propiedades de las Razones Trigonométricas:</strong></h3>
+        <ul>
+            <li>Las razones trigonométricas son invariantes para triángulos semejantes, es decir, triángulos que tienen la misma forma pero no necesariamente el mismo tamaño.</li>
+            <li>Las razones trigonométricas tienen valores que varían entre 0 y 1, dependiendo del ángulo.</li>
+            <li>Las razones trigonométricas se pueden utilizar para calcular las medidas de los lados y ángulos de un triángulo rectángulo, si se conocen dos de sus medidas.</li>
+        </ul> 
+    </section>
+    <section id="videos">
+        <h2><strong>Videos Explicativos</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">¿Qué son las Razones Trigonométricas?</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/7pUi5lvLf7c?si=kzJ96JW1oOFgqclr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Cateto Opuesto, Cateto Adyacente e Hipotenusa, Ubicar Correctamente</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/FUMlQtJfrHo?si=qbwRXvBET1Q68NL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Trucos para Memorizar las Razones Trigonométricas</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/W4DpA-puWgw?si=VZZz1HoVeblpL7Cf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Razones Trigonométricas de un Ángulo, Ejemplo 1</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/Eh2SXkZR9BY?si=8Co_TqdwtsxNKWWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Razones Trigonométricas de un Ángulo, Ejemplo 2</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/Qx8n_-Te-wk?si=ON6ekPZGrjpLuGvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Razones Trigonométricas, Hallar un lado, Ejemplo 1</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/CRg5jQRj1Hg?si=1-hRD5uuhh6lQKKd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ejercicios">
+        <h2><strong>Ejercicios</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                        <h5>Ejercicio: Triángulo Rectángulo</h5>
+                        <p>Un triángulo rectángulo tiene un cateto opuesto de 6 cm y un cateto adyacente de 8 cm. Calcula el seno, coseno y tangente del ángulo A.</p>
+                    
+                        <p>Solución:</p>
+                        <ul>
+                            <li>Seno (sin A):sin A = cateto opuesto / hipotenusa = 6 cm / h</li>
+                            <li>Coseno (cos A):cos A = cateto adyacente / hipotenusa = 8 cm / h</li>
+                            <li>Tangente (tan A):tan A = cateto opuesto / cateto adyacente = 6 cm / 8 cm</li>
+                        </ul><br>
+                        <p>Para calcular la hipotenusa, usamos el teorema de Pitágoras:</p>
+                        <p>h^2 = 6^2 + 8^2</p>
+                        <p>h^2 = 100</p>
+                        <p>h = 10 cm</p>
+                    
+                        <p>Ahora podemos reemplazar el valor de la hipotenusa:</p>
+                        <ul>
+                            <li>Seno (sin A) = 6 cm / 10 cm = 0.6</li>
+                            <li>Coseno (cos A) = 8 cm / 10 cm = 0.8</li>
+                            <li>Tangente (tan A) = 6 cm / 8 cm = 0.75</li>
+                        </ul><br>
+                    
+                        <h5>Ejercicio: Altura de un Edificio</h5>
+                        <p>Un edificio tiene una altura de 30 metros y una sombra de 20 metros. ¿Cuál es el ángulo de elevación del edificio?</p>
+                    
+                        <p>Solución:</p>
+                        <ul>
+                            <li>Se forma un triángulo rectángulo con la altura como cateto opuesto y la sombra como cateto adyacente.</li>
+                            <li>La tangente del ángulo de elevación es igual a 30 m / 20 m = 1.5</li>
+                            <li>Usando la función tangente inversa (tan^-1) en una calculadora, obtenemos el ángulo de elevación:</li>
+                            <li>Ángulo de elevación ≈ 56.31°</li>
+                        </ul><br>
+                    
+                        <h5>Ejercicio: Avión en Descenso</h5>
+                        <p>Un avión está volando a una altura de 10,000 metros a una velocidad de 250 m/s. ¿Cuál es el ángulo de descenso del avión?</p>
+                    
+                        <p>Solución (Explicación avanzada):</p>
+                        <p>Se forma un triángulo rectángulo con la altura del avión como cateto opuesto y la distancia horizontal recorrida como cateto adyacente. La velocidad del avión es la hipotenusa.</p>
+                    
+                        <ul>
+                            <li>La tangente del ángulo de descenso es igual a 10,000 m / d (siendo d la distancia horizontal recorrida).</li>
+                            <li>La velocidad horizontal del avión se calcula como 250 m/s * cos(ángulo de descenso).</li>
+                            <li>La distancia horizontal recorrida se calcula como velocidad horizontal * tiempo (d = 250 m/s * cos(ángulo de descenso) * t).</li>
+                        </ul>
+                                
+</ol>
+</div>
+</div>
+                        
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                        <ol>
+                            <li>
+                                Un triángulo rectángulo tiene un cateto opuesto de 5 cm y un ángulo de 30°. Calcula el cateto adyacente y la hipotenusa.
+                            </li><br>
+                            <li>
+                                Un edificio tiene una altura de 40 metros y una sombra de 25 metros. ¿Cuál es el ángulo de elevación del edificio?
+                            </li><br>
+                            <li>
+                                Un avión está volando a una altura de 8,000 metros a una velocidad de 300 m/s. ¿Cuál es el ángulo de descenso del avión? (Ten en cuenta que se necesita información adicional para resolver este problema completamente).
+                            </li><br>
+                            <li>
+                                Un poste de luz tiene una altura de 5 metros. Se coloca una escalera apoyada contra el poste a una distancia de 3 metros de la base. ¿Cuál es el ángulo que forma la escalera con el suelo?
+                            </li><br>
+                            <li>
+                                Un barco navega a una velocidad de 20 nudos (1 nudo = 1.852 km/h) con un ángulo de 45° con respecto a la costa. ¿A qué distancia de la costa estará el barco después de 2 horas?
+                            </li><br>
+                            <li>
+                                Un triángulo rectángulo tiene un cateto adyacente de 7 cm y una hipotenusa de 13 cm. Calcula el seno, coseno y tangente del ángulo A.
+                            </li><br>
+                            <li>
+                                Un globo aerostático está a una altura de 100 metros y se observa desde dos puntos en el suelo que están separados por una distancia de 50 metros. ¿Cuáles son los ángulos de elevación del globo desde cada punto?
+                            </li><br>
+                            <li>
+                                Un alpinista quiere escalar una montaña que tiene una altura de 3,000 metros. Desde un punto a 1,000 metros de la base de la montaña, el alpinista observa la cima con un ángulo de elevación de 30°. ¿Qué distancia le falta por recorrer al alpinista?
+                            </li><br>
+                            <li>
+                                Una rampa tiene una longitud de 10 metros y una altura de 2 metros. ¿Cuál es el ángulo de inclinación de la rampa?
+                            </li><br>
+                            <li>
+                                Un puente colgante tiene una longitud de 100 metros y una altura máxima de 20 metros. ¿Cuál es el ángulo que forman los cables de suspensión con la horizontal en el punto más alto del puente?
+                            </li>
+                        </ol>
+                        
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2><strong>Formulario de Fórmulas</strong></h2>
+        <h5>Razones Trigonométricas Básicas</h5>
+        <ul>
+            <li>Seno (sin): sin(θ) = cateto opuesto / hipotenusa</li>
+            <li>Coseno (cos): cos(θ) = cateto adyacente / hipotenusa</li>
+            <li>Tangente (tan): tan(θ) = cateto opuesto / cateto adyacente</li>
+        </ul>
+    
+        <h5>Identidades Pitagóricas</h5>
+        <ul>
+            <li>sin^2(θ) + cos^2(θ) = 1</li>
+            <li>1 + tan^2(θ) = sec^2(θ)</li>
+            <li>1 + cot^2(θ) = csc^2(θ)</li>
+        </ul>
+    
+        <h5>Fórmulas Angulares</h5>
+        <h6>Ángulos Dobles</h6>
+        <ul>
+            <li>sin(2θ) = 2 * sin(θ) * cos(θ)</li>
+            <li>cos(2θ) = cos^2(θ) - sin^2(θ) = 2 * cos^2(θ) - 1 = 1 - 2 * sin^2(θ)</li>
+            <li>tan(2θ) = (2 * tan(θ)) / (1 - tan^2(θ))</li>
+        </ul>
+        <h6>Ángulos Medios</h6>
+        <ul>
+            <li>sin((θ + α)/2) = √((1 + cos(θ - α))/2)</li>
+            <li>cos((θ + α)/2) = √((1 + cos(θ + α))/2)</li>
+            <li>tan((θ + α)/2) = √((1 - cos(θ - α))/(1 + cos(θ - α)))</li>
+        </ul>
+    
+        <h5>Suma y Diferencia de Ángulos</h5>
+        <ul>
+            <li>sin(θ + α) = sin(θ) * cos(α) + cos(θ) * sin(α)</li>
+            <li>sin(θ - α) = sin(θ) * cos(α) - cos(θ) * sin(α)</li>
+            <li>cos(θ + α) = cos(θ) * cos(α) - sin(θ) * sin(α)</li>
+            <li>cos(θ - α) = cos(θ) * cos(α) + sin(θ) * sin(α)</li>
+            <li>tan(θ + α) = (tan(θ) + tan(α)) / (1 - tan(θ) * tan(α))</li>
+            <li>tan(θ - α) = (tan(θ) - tan(α)) / (1 + tan(θ) * tan(α))</li>
+        </ul>
+    
+        <h5>Teoremas</h5>
+        <ul>
+            <li>Teorema del seno: a/sin(A) = b/sin(B) = c/sin(C)</li>
+            <li>Teorema del coseno: c^2 = a^2 + b^2 - 2ab * cos(C)</li>
+            <li>Teorema de la tangente: (a + b)/tan(C/2) = (a - b)/tan(A - B)/2)</li>
+        </ul>
+    
+        <h5>Otras Identidades</h5>
+        <ul>
+            <li>Identidades de reducción de potencias:</li>
+                <ul>
+                    <li>sin^2(θ) = (1 - cos(2θ))/2</li>
+                    <li>cos^2(θ) = (1 + cos(2θ))/2</li>
+                </ul>
+            <li>Transformación de suma a producto y viceversa (fórmulas más avanzadas)</li>
+           
+    </section>
+</body>
+</html>

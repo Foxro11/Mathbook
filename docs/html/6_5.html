@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje y Expresiones Algebraicas</title>
+   
+
+     <!-- LINKS -->
+     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+     <!-- FUENTES -->
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styleprimersemestre.css">
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+     <!-- CNDJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+      <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+   
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #d2f8ff;
+    /* browsers antiguos */
+    background: -webkit-linear-gradient(to right,  #ffbb00, #b8007a,#ff9100);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,   #dab201, #dd00b8,#eea215);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+section#formulario {
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <header>
+       <center> <strong><h1>Diagrama de Venn</h1></strong></center>
+    </header>
+    <section id="introduccion">
+        <h2><strong>Introducción</strong></h2>
+        <p>Un diagrama de Venn es una herramienta visual que se utiliza para representar relaciones entre conjuntos.<br>
+             Estos diagramas emplean figuras geométricas, generalmente círculos u óvalos, para representar cada conjunto y las relaciones entre ellos se muestran mediante la superposición de estas figuras.</p>
+    </section>
+    <section id="explicacion">
+        <h3><strong>Elementos Clave de un Diagrama de Venn:</strong></h3>
+        <ul>
+            <li>Figuras geométricas: Cada conjunto se representa con una figura geométrica diferente. Los círculos son la forma más común, pero también se pueden usar óvalos, cuadrados, triángulos u otras formas.</li>
+            <li>Superposición: Las figuras geométricas pueden superponerse para mostrar que algunos elementos pertenecen a dos o más conjuntos.</li>
+            <li>Etiquetas: Cada figura geométrica se etiqueta con el nombre del conjunto que representa.</li>
+            <li>Áreas: Las diferentes áreas dentro del diagrama de Venn representan diferentes relaciones entre los conjuntos.</li><br>
+        </ul>
+        <h3><strong>Utilidad de los Diagramas de Venn:</strong></h3>
+        <ul>
+            <li>Visualizar relaciones: Los diagramas de Venn son una forma sencilla y eficaz de visualizar las relaciones entre conjuntos, lo que facilita la comprensión de conceptos complejos.</li>
+            <li>Organizar información: Los diagramas de Venn pueden usarse para organizar información de forma gráfica, lo que facilita la comparación y el contraste de diferentes conjuntos.</li>
+            <li>Resolver problemas: Los diagramas de Venn pueden usarse para resolver problemas de lógica y razonamiento, como determinar si una afirmación es verdadera o falsa para todos los elementos de un conjunto.</li>
+            <li>Enseñar conceptos: Los diagramas de Venn son una herramienta útil para enseñar conceptos matemáticos y lógicos a estudiantes de diferentes edades.</li><br>
+        </ul>
+        <h3><strong>Elementos de los Diagramas de Venn:</strong></h3>
+        <ul>
+            <li>Dos conjuntos: Un diagrama de Venn de dos conjuntos puede usarse para mostrar cómo se superponen dos grupos de elementos. Por ejemplo, un diagrama de Venn podría usarse para mostrar cómo se superponen los conjuntos de "perros" y "animales peludos".</li>
+            <li>Tres conjuntos: Un diagrama de Venn de tres conjuntos puede usarse para mostrar cómo se superponen tres grupos de elementos. Por ejemplo, un diagrama de Venn podría usarse para mostrar cómo se superponen los conjuntos de "frutas", "verduras" y "alimentos verdes".</li>
+            <li>Más de tres conjuntos: Se pueden crear diagramas de Venn con más de tres conjuntos, pero a medida que aumenta el número de conjuntos, el diagrama se vuelve más complejo y difícil de interpretar.</li>
+
+        </ul> 
+    </section>
+    <section id="videos">
+        <h2><strong>Videos Explicativos</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Diagramas de Venn, Introducción</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/1EbYydBSmPE?si=SplEo8AvKTyaMM2G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Diagramas de Venn, Dos Conjuntos</h5>
+                  <iframe width="245" height="147" src="https://www.youtube.com/embed/F6CCo3SFxuk?si=h6Mcfwkr15WRAPs-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Diagramas de Venn, Tres Conjuntos</h5>
+                  <iframe width="245" height="147" src="https://www.youtube.com/embed/5fe9VJb85H8?si=wd1n2lYnySZnyeK4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Conjuntos, Introducción</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/KmcRMlv9_T4?si=Ln_HuB5itY9xHAzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Operaciones con Conjuntos, Diagramas de Venn, Ejercicios</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/9snq-aL9koM?si=UWvXoUEGTcmWHPDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Unión de Conjuntos, Diagramas de Venn</h5>
+                    <iframe width="245" height="147" src="https://www.youtube.com/embed/3M9OsyMkgs8?si=Rf18Yt3nIKHYRiB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ejercicios">
+        <h2><strong>Ejercicios</strong></h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Resueltos</h5>
+                    <ol class="card-text">
+                      <h5>Diagrama de Venn - Ejercicio 1</h5>
+                      <div style="display: flex; justify-content: center; align-items: center;">
+                        <div style="width: 200px; height: 200px; border-radius: 50%; background-color: #c76bf1; margin: 20px;">
+                          <p style="text-align: center;">Personas que les gusta leer (40)</p>
+                        </div>
+                        <div style="width: 180px; height: 180px; border-radius: 50%; background-color: #62aafc; margin: 20px;">
+                          <p style="text-align: center;">Personas que les gusta escribir (30)</p>
+                        </div>
+                        <div style="width: 150px; height: 150px; border-radius: 50%; background-color: #4cf096; position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);">
+                          <p style="text-align: center;">Ambas actividades (20)</p>
+                        </div>
+                      </div>
+                      <br><br><br><p style="text-align: center;">No les gusta ninguna actividad: 20</p><br>
+
+                     <h5>Explicación:</h5>
+                     <li>Se dibujan dos círculos, uno para "Leer" y otro para "Escribir".</li>
+                     <li>Se escribe la cantidad de personas que les gusta cada actividad dentro de cada círculo.</li>
+                     <li>Se escribe la cantidad de personas que les gustan ambas actividades en la superposición.</li>
+                     <li>Se calcula el número de personas que no les gusta ninguna actividad restando el total de personas a las que les gusta leer, escribir o ambas: 100 - (40 + 30 - 20) = 20.</li>      
+                     <li>Se escribe la respuesta en la parte inferior del diagrama.</li> 
+</ol>
+</div>
+</div>
+                        
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicios Propuestos</h5>
+                    <ol class="card-text">
+                        
+                      <h5>Diagrama de Venn - Ejercicio 1</h5>
+                      <div>
+                        <p>Personas que les gusta leer (25)</p>
+                        <p>Personas que les gusta escribir (20)</p>
+                        <p>Ambas actividades (15)</p>
+                      </div>
+                      <p>No les gusta ninguna actividad: X</p>
+
+                      <h5>Diagrama de Venn - Ejercicio 2</h5>
+  <div>
+    <p>Estudiantes que estudian matemáticas (20)</p>
+    <p>Estudiantes que estudian física (15)</p>
+    <p>Ambas materias (10)</p>
+  </div>
+  <p>Solo matemáticas o solo física: X</p>
+
+  <h5>Diagrama de Venn - Ejercicio 3</h5>
+  <div>
+    <p>Alumnos que practican fútbol (12)</p>
+    <p>Alumnos que practican baloncesto (10)</p>
+    <p>Ambas actividades (8)</p>
+  </div>
+  <p>Solo fútbol o solo baloncesto: X</p>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <h2><strong>Formulario de Fórmulas</strong></h2>
+        <ol>
+          <ul>
+            <li>No les gusta ninguna: Total - (A + B - Ambas)</li>
+            <li>Solo A: A - Ambas</li>
+            <li>Solo B: B - Ambas</li>
+            <li>Solo C (si aplica): C - (AmbasA + AmbasB)</li>
+            <li>Ambas A y B: Ambas</li>
+            <li>Ambas A y C: AmbasA - AmbasB</li>
+            <li>Ambas B y C: AmbasB - AmbasA</li>
+            <li>Ambas A, B y C: Ambas - (AmbasA + AmbasB + AmbasC)</li>
+          </ul>
+    </section>
+</body>
+</html>
